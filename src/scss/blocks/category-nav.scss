@@ -1,0 +1,30 @@
+.category-nav {
+
+}
+
+.category-nav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.category-nav__item {
+  flex-grow: 1;
+}
+
+.category-nav__link {
+  @include reset-link;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  transition: background-color 0.25s;
+  &:hover {
+    color: #fff;
+    background-color: #509bb4;
+    transition: background-color 0.25s;
+  }
+}

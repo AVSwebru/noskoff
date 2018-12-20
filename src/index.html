@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Носкофф</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="main-header">
+    <div class="main-header__top">
+      <div class="uk-container">
+        <div class="main-header__top-wrapper">
+          <nav class="customer-nav" aria-label="Навигация по типу покупателя">
+            <ul class="customer-nav__list">
+              <li class="customer-nav__item active">
+                <a class="customer-nav__link" href="#">Розница</a>
+              </li>
+              <li class="customer-nav__item">
+                <a class="customer-nav__link" href="#">Оптовикам</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-header__rightside">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Новости</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Доставка</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Оплата</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header-social-bar">
+              <li class="header-social-bar__item">
+                <a href="#" class="header-social-bar__link">
+                  <svg class="header-social-bar__icon" width="16" height="16">
+                    <use xlink:href="/img/sprite.svg#in"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-bar__item">
+                <a href="#" class="header-social-bar__link">
+                  <svg class="header-social-bar__icon" width="21" height="12">
+                    <use xlink:href="/img/sprite.svg#vk"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-bar__item">
+                <a href="#" class="header-social-bar__link">
+                  <svg class="header-social-bar__icon" width="18" height="16">
+                    <use xlink:href="/img/sprite.svg#twitter"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header__middle">
+      <div class="uk-container">
+        <div class="main-header__middle-wrapper">
+          <div class="main-header__middle-leftside">
+            <a class="main-header__sitetitle" href="#" title="чулочно-носочные изделия 'Носкофф'">
+              <img class="main-header__logo" src="img/logo.png" alt="">
+              <span class="main-header__sitetitle-desc">чулочно-носочные изделия</span>
+            </a>
+            <form class="city-form">
+              <label class="city-form__label" for="city">
+                Ваш город
+              </label>
+              <select class="city-form__select uk-select" id="city">
+                <option>Воронеж</option>
+                <option>Липецк</option>
+                <option>Белгород</option>
+              </select>
+            </form>
+          </div>
+          <div class="main-header__middle-rightside">
+            <form class="search-form">
+              <div class="uk-inline">
+                <input class="search-form__input uk-search" type="text" placeholder="Поиск">
+                <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
+              </div>
+            </form>
+            <div class="">
+              <a class="main-header__tel" href="tel:+78001234567">
+                8 800 123 45 67
+              </a>
+              <div class="main-header__time">
+                <svg class="main-header__time-icon" width="20" height="20">
+                  <use xlink:href="/img/sprite.svg#clock">
+                </svg>
+                <div class="main-header__time-text">
+                  с 9:00 до 20:00
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="main-header__login-btn" type="button">Вход / регистрация</button>
+              <div class="main-header__control-bar">
+                <a class="main-header__control-item" href="#" title="Отложенные товары">
+                  <svg class="main-header__control-item-icon" width="18" height="18">
+                    <use xlink:href="/img/sprite.svg#heart"/>
+                  </svg>
+                  <span class="main-header__control-item-badge uk-badge">2</span>
+                </a>
+                <a class="main-header__control-item" href="#" title="Корзина">
+                  <svg class="main-header__control-item-icon" width="18" height="18">
+                    <use xlink:href="/img/sprite.svg#cart"/>
+                  </svg>
+                  <span class="main-header__control-item-badge uk-badge">8</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header__bottom">
+      <div class="uk-container">
+        <nav class="category-nav" aria-label="Навигация по каталогам">
+          <ul class="category-nav__list">
+            <li class="category-nav__item"><a href="#" class="category-nav__link">Женщинам</a></li>
+            <li class="category-nav__item"><a href="#" class="category-nav__link">Мужчинам</a></li>
+            <li class="category-nav__item"><a href="#" class="category-nav__link">Девочкам</a></li>
+            <li class="category-nav__item"><a href="#" class="category-nav__link">Мальчикам</a></li>
+            <li class="category-nav__item"><a href="#" class="category-nav__link">Распродажа</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="home-slider" uk-slideshow="animation: push">
+      <div class="uk-position-relative uk-visible-toggle uk-light">
+        <ul class="home-slider__items uk-slideshow-items">
+          <li>
+            <img data-uk-cover src="img/slide.jpg" alt="">
+          </li>
+          <li>
+            <img data-uk-cover src="img/slide.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <ul class="home-slider__nav uk-slideshow-nav uk-dotnav uk-flex-center"></ul>
+    </div>
+    <div class="best-offers">
+      <div class="uk-container">
+        <div class="best-offers__tab" data-uk-tab>
+          <div class="uk-active">
+            <a class="best-offers__tab-item" href="#">Лучшие предложения</a>
+          </div>
+          <div>
+            <a class="best-offers__tab-item" href="#">Новинки</a>
+          </div>
+        </div>
+        <div class="uk-switcher">
+          <div>
+            <div class="best-offers__grid">
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-2.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-3.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-4.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="best-offers__grid">
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-3.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-4.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="product">
+                  <div class="product__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-2.jpg" alt="">
+                    <div class="product__more">
+                      <a class="product__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product__like" type="button">
+                        <svg class="product__like-icon">
+                          <use xlink:href="img/sprite.svg#heart"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product__desc">
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product__price">
+                      160 <span class="rubl">c</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-banners">
+      <div class="uk-container">
+        <div class="home-banners__grid">
+          <div>
+            <a class="banner-item uk-cover-container" href="#">
+              <img class="banner-item__img" data-uk-cover src="img/home-banner-1.jpg" alt="">
+              <span class="banner-item__title">
+                Женщинам
+              </span>
+            </a>
+          </div>
+          <div>
+            <a class="banner-item uk-cover-container" href="#">
+              <img class="banner-item__img" data-uk-cover src="img/home-banner-3.jpg" alt="">
+              <span class="banner-item__title">
+                Мужчинам
+              </span>
+            </a>
+          </div>
+          <div>
+            <a class="banner-item uk-cover-container" href="#">
+              <img class="banner-item__img" data-uk-cover src="img/home-banner-4.jpg" alt="">
+              <span class="banner-item__title">
+                Детям
+              </span>
+            </a>
+          </div>
+          <div>
+            <a class="banner-item uk-cover-container" href="#">
+              <img class="banner-item__img" data-uk-cover src="img/home-banner-2.jpg" alt="">
+              <span class="banner-item__title">
+                Распродажа
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="about">
+      <div class="uk-container">
+        <div class="about__grid">
+          <div>
+            <h2 class="section-title">
+              О нас
+            </h2>
+            <div class="about__text">
+              <p>Не стоит недооценивать носки, на первый взгляд незаметная часть гардероба, может, как подчеркнуть Ваш статус, так и напрочь разрушить его. И неважно будет, как дорого Вы купили свой костюм или туфли, если носки при этом растянуты, то для начала нужно было купить носки. Недаром носки называют Наполеоном мужского гардероба.
+              <p>Мужская мода, несмотря на свой консерватизм, давно вышла за рамки делового стиля. Появилось множество интересных направлений моды. В гардеробе мужчины умещается одежда для разных случаев жизни: от повседневных офисных будней до торжественных мероприятий и даже тематических вечеринок.
+              <p>Неважно насколько Вы далеки от моды, просто запомните, что под костюм никогда не надевают спортивные белые носки. Казалось бы, ну что может быть проще, не сочетать спортивный стиль с классическим. Но почему-то носки записали в ряды универсальной одежды, и используют их без принадлежности к стилю.
+            </div>
+          </div>
+          <div>
+            <div class="about__banner-1">
+              <img src="img/about-banner-1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.customer-nav {
+  box-shadow: inset 1px 2px 4px rgba(164, 146, 138, 0.35);
+  border-radius: 20px;
+  border: 2px solid #faf7f6;
+  background-color: #f2ebe8;
+  background-image: linear-gradient(to top, rgba(248, 243, 241, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
+}
+
+.customer-nav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.customer-nav__item {
+  &.active .customer-nav__link {
+    padding: 15px 30px;
+    box-shadow: 1px 1px 2px rgba(170, 163, 164, 0.35);
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #343434;
+  }
+}
+
+.customer-nav__link {
+  @include reset-link;
+  display: block;
+  padding: 15px 25px;
+  color: #7c7678;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  &:hover {
+    color: #7c7678;
+  }
+}

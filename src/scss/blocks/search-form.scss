@@ -1,0 +1,21 @@
+.search-form__input {
+  width: 267px;
+  height: 39px;
+  padding: 0 40px 0 23px;
+  border-radius: 20px;
+  border: 1px solid #e5dfdf;
+  background-color: #fff;
+  transition: box-shadow 0.25s;
+  &::placeholder {
+    color: #7c7678;
+  }
+  &:focus {
+    box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
+    border: 1px solid #7cb5c9;
+    transition: box-shadow 0.25s;
+  }
+}
+
+.search-form__icon {
+
+}

@@ -1,0 +1,122 @@
+.main-header {
+}
+
+.main-header__top {
+  padding: 13px 0;
+  background-color: #f8f3f1;
+}
+
+.main-header__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__rightside {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__middle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__middle-leftside {
+  display: flex;
+  align-items: center;  
+}
+
+.main-header__logo {
+  margin-bottom: 8px;
+}
+
+.main-header__sitetitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__sitetitle-desc {
+  color: #7c7678;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.12px;
+}
+
+.main-header__middle-rightside {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__tel {
+  @include reset-link;
+  display: block;
+  margin-bottom: 15px;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  &:hover {
+    color: #1c1c1c;
+  }
+}
+
+.main-header__time {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__time-icon {
+  margin-right: 10px;
+  fill: #c8c8c8;
+}
+
+.main-header__time-text {
+  color: #7c7678;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.main-header__login-btn {
+  @include reset-btn;
+  margin-bottom: 17px;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.7px;
+}
+
+.main-header__control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 -15px;
+}
+
+.main-header__control-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+.main-header__control-item-icon {
+  fill:  #c8c8c8;
+}
+
+.main-header__control-item-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 17px;
+  height: 17px;
+  background-color: #6cbcd8;
+}
+
+.main-header__bottom {
+  background: #6cbcd8 url('../img/bg-category-nav.jpg') 0 50% repeat-x;
+  background-size: auto;
+}
