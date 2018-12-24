@@ -1,6 +1,3 @@
-.main-header {
-}
-
 .main-header__top {
   padding: 13px 0;
   background-color: #f8f3f1;
@@ -17,6 +14,14 @@
   align-items: center;
 }
 
+.main-header__search-form {
+  margin-right: 78px;
+}
+
+.main-header__middle {
+  padding: 10px 0 20px;
+}
+
 .main-header__middle-wrapper {
   display: flex;
   align-items: center;
@@ -25,7 +30,7 @@
 
 .main-header__middle-leftside {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .main-header__logo {
@@ -33,8 +38,10 @@
 }
 
 .main-header__sitetitle {
+  @include reset-link;
   display: flex;
   flex-direction: column;
+  margin-right: 78px;
 }
 
 .main-header__sitetitle-desc {
@@ -48,6 +55,10 @@
 .main-header__middle-rightside {
   display: flex;
   align-items: center;
+}
+
+.main-header__contacts {
+  margin-right: 78px;
 }
 
 .main-header__tel {
@@ -89,6 +100,7 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.7px;
+  cursor: pointer;
 }
 
 .main-header__control-bar {
@@ -110,10 +122,10 @@
 .main-header__control-item-badge {
   position: absolute;
   top: -4px;
-  right: -4px;
-  width: 17px;
-  height: 17px;
+  right: -18px;
   background-color: #6cbcd8;
+  font-size: 11px;
+  line-height: 1;
 }
 
 .main-header__bottom {

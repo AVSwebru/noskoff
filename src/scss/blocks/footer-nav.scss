@@ -1,0 +1,20 @@
+.footer-nav {
+
+}
+
+.footer-nav__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.footer-nav__link {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  &:hover {
+    color: #707070;
+  }
+}

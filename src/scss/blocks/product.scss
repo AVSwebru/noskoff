@@ -54,10 +54,10 @@
   transition: transform 0.25s, background-color 0.25s;
   cursor: pointer;
   &:hover {
-    background-color: #81c5dd;
     transition: background-color 0.25s;
     .product__more-link {
       color: #fff;
+      background-color: rgba(108, 188, 216, 0.85);
     }
     .product__like-icon {
       fill: #fff;

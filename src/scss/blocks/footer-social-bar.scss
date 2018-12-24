@@ -1,0 +1,34 @@
+.footer-social-bar {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -5px;
+}
+
+.footer-social-bar__item {
+  margin: 0 5px;
+}
+
+.footer-social-bar__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  box-shadow: inset 1px 2px 4px rgba(204, 178, 185, 0.35);
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: #6cbcd8;
+    transition: background-color 0.25s;
+    .footer-social-bar__icon {
+      fill: #fff;
+    }
+  }
+}
+
+.footer-social-bar__icon {
+  fill: #bcbcbc;
+}

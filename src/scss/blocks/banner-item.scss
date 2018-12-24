@@ -35,6 +35,30 @@
       transition: border-color 0.25s;
     }
   }
+  &--sale {
+    .banner-item__title {
+      &::before {
+        content: '%';
+        position: absolute;
+        top: 0;
+        left: -60px;
+        color: #fff;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 44px;
+      }
+      &::after {
+        content: '%';
+        position: absolute;
+        top: 0;
+        right: -60px;
+        color: #fff;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 44px;
+      }
+    }
+  }
 }
 
 .banner-item__img {

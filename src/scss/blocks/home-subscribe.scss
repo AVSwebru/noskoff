@@ -1,0 +1,35 @@
+.home-subscribe {
+  position: relative;
+  padding: 50px 0 55px;
+  background: #6cbcd8 url('../img/bg-category-nav.jpg') 0 50% repeat-x;
+  background-size: auto;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 2'%3E%3Cdefs%3E%3Cfilter id='a' width='3.594' height='.625' x='.844' y='.906' filterUnits='userSpaceOnUse'%3E%3CfeGaussianBlur in='SourceAlpha' result='blur' stdDeviation='1'/%3E%3CfeFlood flood-color='%23fff' flood-opacity='.29' result='flood'/%3E%3CfeComposite in2='blur' operator='out' result='composite'/%3E%3CfeOffset dy='1' result='offset'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='composite-2'/%3E%3CfeBlend in2='SourceGraphic' result='blend'/%3E%3C/filter%3E%3C/defs%3E%3Cpath fill='%23313131' fill-rule='evenodd' d='M.849 1.537h3.6v-.63h-3.6v.63z' data-name='- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -' filter='url(%23a)'/%3E%3C/svg%3E%0A") 0 50% repeat-x;
+    background-size: auto;
+  }
+}
+
+.home-subscribe__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-subscribe__title {
+  @include reset-heading;
+  max-width: 235px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-subscribe__wrapper {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,20 @@
+.home-about {
+  padding: 95px 0 75px;
+  background: #fff url('../img/lace-gray.png') 0 0 repeat-x;
+}
+
+.home-about__grid {
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-column-gap: 80px;
+}
+
+.home-about__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-about__banner-1 {
+  margin-bottom: 25px;
+}

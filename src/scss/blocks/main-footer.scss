@@ -1,0 +1,61 @@
+.main-footer__top {
+  padding: 75px 0 100px;
+  background-color: #f8f3f1;
+}
+
+.main-footer__top-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-footer__tel {
+  @include reset-link;
+  margin-top: 10px;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  &:hover {
+    color: #707070;
+  }
+}
+
+.main-footer__bottom {
+  padding: 40px 0 16px;
+  background: #ebe0dc url("../img/lace-white.png") 0 0 repeat-x;
+}
+
+.main-footer__bottom-leftside {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__owner {
+  margin-right: 60px;
+  color: #3f3336;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.main-footer__policy {
+  color: #3f3336;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: underline;
+  &:hover {
+    color: #3f3336;
+  }
+}
+
+.main-footer__footer-nav {
+  width: 58%;
+}

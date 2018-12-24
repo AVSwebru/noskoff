@@ -1,6 +1,7 @@
 .search-form__input {
   width: 267px;
   height: 39px;
+  box-sizing: border-box;
   padding: 0 40px 0 23px;
   border-radius: 20px;
   border: 1px solid #e5dfdf;
@@ -8,6 +9,7 @@
   transition: box-shadow 0.25s;
   &::placeholder {
     color: #7c7678;
+    font-size: 14px;
   }
   &:focus {
     box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
@@ -17,5 +19,5 @@
 }
 
 .search-form__icon {
-
+  left: 85%;
 }
