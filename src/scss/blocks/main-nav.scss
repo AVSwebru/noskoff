@@ -1,18 +1,20 @@
-.main-nav {
-  margin-right: 46px;
-}
-
 .main-nav__list {
   @include reset-list;
   display: flex;
   align-items: center;
   margin: 0 -17px;
+  @media (max-width: $breakpoint-medium) {
+    margin: 0 -12px;
+  }
 }
 
 .main-nav__item {
   margin: 0 17px;
   &.active .main-nav__link {
     color: #458fa7;
+  }
+  @media (max-width: $breakpoint-medium) {
+    margin: 0 12px;
   }
 }
 
@@ -43,5 +45,8 @@
       transform:: translate(-50%, 0);
       transition: transform 0.25s;
     }
+  }
+  @media (max-width: $breakpoint-medium) {
+    font-size: 12px;
   }
 }

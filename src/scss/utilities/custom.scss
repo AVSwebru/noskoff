@@ -7,7 +7,7 @@ $base-color: #2d2d2d;
 $container-max-width: 1140px;
 $global-medium-gutter: 15px;
 
-// $internal-form-select-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7' /%3E%3C/svg%3E");
+$internal-form-select-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='10' viewBox='0 0 512 512'%3E%3Cpath fill='%23878787' d='M509.121 125.966c-3.838-3.838-10.055-3.838-13.893 0L256.005 365.194 16.771 125.966c-3.838-3.838-10.055-3.838-13.893 0-3.838 3.838-3.838 10.055 0 13.893l246.18 246.175c1.842 1.842 4.337 2.878 6.947 2.878 2.61 0 5.104-1.036 6.946-2.878l246.17-246.175c3.838-3.838 3.838-10.055 0-13.893z'/%3E%3C/svg%3E%0A";
 
 $tab-item-active-color: #1c1c1c;
 $tab-item-padding-horizontal: 0;

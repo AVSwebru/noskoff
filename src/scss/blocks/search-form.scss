@@ -1,3 +1,18 @@
+.search-form {
+  &--adapt {
+    width: 100%;
+    padding: 50px 20px;
+    background: #6cbcd8;
+  }
+}
+
+.search-form__wrapper {
+  position: relative;
+  @media (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
+}
+
 .search-form__input {
   width: 267px;
   height: 39px;
@@ -16,8 +31,11 @@
     border: 1px solid #7cb5c9;
     transition: box-shadow 0.25s;
   }
+  @media (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
 }
 
 .search-form__icon {
-  left: 85%;
+  left: calc(100% - 45px);
 }

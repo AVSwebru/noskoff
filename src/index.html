@@ -25,7 +25,7 @@
             </ul>
           </nav>
           <div class="main-header__rightside">
-            <nav class="main-nav">
+            <nav class="main-header__main-nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
                   <a href="" class="main-nav__link">О нас</a>
@@ -44,7 +44,7 @@
                 </li>
               </ul>
             </nav>
-            <ul class="header-social-bar">
+            <ul class="main-header__header-social-bar header-social-bar">
               <li class="header-social-bar__item">
                 <a href="#" class="header-social-bar__link">
                   <svg class="header-social-bar__icon" width="16" height="16">
@@ -70,6 +70,11 @@
                 </a>
               </li>
             </ul>
+            <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open" type="button" aria-label="Кнопка переключения меню">
+              <span class="menu-btn__line menu-btn__line_first"></span>
+              <span class="menu-btn__line menu-btn__line_second"></span>
+              <span class="menu-btn__line menu-btn__line_third"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -94,8 +99,8 @@
             </form>
           </div>
           <div class="main-header__middle-rightside">
-            <form class="main-header__search-form search-form">
-              <div class="uk-inline">
+            <form class="main-header__search-form search-form" aria-label="Форма поиска">
+              <div class="search-form__wrapper">
                 <input class="search-form__input uk-search" type="text" placeholder="Поиск">
                 <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
               </div>
@@ -113,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="main-header__control">
               <button class="main-header__login-btn" type="button">Вход / регистрация</button>
               <div class="main-header__control-bar">
                 <a class="main-header__control-item" href="#" title="Отложенные товары">
@@ -130,13 +135,14 @@
                 </a>
               </div>
             </div>
+            <button class="main-header__search-btn search-btn" data-uk-icon="icon: search" data-uk-toggle="target: .js-search-adapt" aria-label="Кнопка переключения поиска"></button>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header__bottom">
       <div class="uk-container">
-        <nav class="category-nav" aria-label="Навигация по каталогам">
+        <nav class="main-header__category-nav category-nav" aria-label="Навигация по каталогам">
           <ul class="category-nav__list">
             <li class="category-nav__item"><a href="#" class="category-nav__link">Женщинам</a></li>
             <li class="category-nav__item"><a href="#" class="category-nav__link">Мужчинам</a></li>
@@ -146,6 +152,58 @@
           </ul>
         </nav>
       </div>
+    </div>
+    <nav class="menu-nav-adapt js-menu-nav-adapt uk-animation-slide-top" aria-label="Основная навигация">
+      <button class="menu-btn menu-btn--close js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open;" type="button" aria-label="Кнопка переключения меню">
+        <span class="menu-btn__line menu-btn__line_first"></span>
+        <span class="menu-btn__line menu-btn__line_second"></span>
+        <span class="menu-btn__line menu-btn__line_third"></span>
+      </button>
+      <ul class="menu-nav-adapt__list">
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Женщинам</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Мужчинам</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Девочкам</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Мальчикам</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Распродажа</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">О нас</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Новости</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Доставка</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Оплата</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Контакты</a>
+        </li>
+        <li class="menu-nav-adapt__item">
+          <a class="menu-nav-adapt__link" href="#">Вход/регистрация</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-adapt js-search-adapt" hidden>
+      <form class="search-adapt__search-form search-form search-form--adapt" aria-label="Форма поиска">
+        <button class="search-adapt__close-btn uk-close uk-close-large uk-position-top-right" data-uk-close data-uk-toggle="target: .js-search-adapt"></button>
+        <div class="search-form__wrapper">
+          <input class="search-form__input uk-search" type="text" placeholder="Поиск">
+          <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
+        </div>
+      </form>
+      <div class="uk-overlay-primary uk-position-cover" data-uk-toggle="target: .js-search-adapt"></div>
     </div>
   </header>
   <main>

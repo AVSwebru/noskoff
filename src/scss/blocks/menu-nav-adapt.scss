@@ -1,0 +1,36 @@
+.menu-nav-adapt {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #6cbcd8;
+  &.is-open {
+    display: block;
+  }
+}
+
+.menu-nav-adapt__list {
+  @include reset-list;
+  overflow-y: scroll;
+  max-height: 100vh;
+  box-sizing: border-box;
+  padding: 65px 30px 35px;
+}
+
+.menu-nav-adapt__item {
+  margin-bottom: 25px;
+}
+
+.menu-nav-adapt__link {
+  @include reset-link;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
