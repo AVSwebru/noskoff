@@ -3,11 +3,18 @@
 }
 
 .home-slider__items {
-  max-height: 650px;
+  height: 655px !important;
+  @media (max-width: $breakpoint-medium) {
+    height: 290px !important;
+  }
+  @media (max-width: $breakpoint-small) {
+    height: 250px !important;
+  }
 }
 
 .home-slider__nav {
   position: absolute;
   left: 50%;
   bottom: 17px;
+  transform: translateX(-50%);
 }

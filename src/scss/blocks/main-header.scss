@@ -1,5 +1,5 @@
 .main-header__top {
-  padding: 13px 0;
+  padding: 10px 0 8px;
   background-color: #f8f3f1;
 }
 
@@ -17,10 +17,13 @@
 
 .main-header__search-form {
   margin-right: 78px;
+  @media (max-width: $breakpoint-large) {
+    margin-right: 35px;
+  }
   @media (max-width: $breakpoint-medium) {
     order: 3;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: 0;
   }
   @media (max-width: $breakpoint-small) {
@@ -29,7 +32,7 @@
 }
 
 .main-header__middle {
-  padding: 10px 0 20px;
+  padding: 13px 0 20px;
 }
 
 .main-header__middle-wrapper {
@@ -41,31 +44,42 @@
 .main-header__middle-leftside {
   display: flex;
   align-items: center;
+  margin-right: 75px;
+  @media (max-width: $breakpoint-large) {
+    margin-right: 35px;
+  }
   @media (max-width: $breakpoint-medium) {
     flex-direction: column;
     align-items: flex-start;
-    width: 30%;
+    margin-right: 70px;
   }
   @media (max-width: $breakpoint-small) {
-    width: auto;
+    margin-right: 25px;
   }
 }
 
 .main-header__logo {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .main-header__sitetitle {
   @include reset-link;
+  position: relative;
+  top: -4px;
   display: flex;
   flex-direction: column;
-  width: 177px;
-  margin-right: 78px;
+  width: 180px;
+  margin-right: 72px;
+  @media (max-width: $breakpoint-large) {
+    margin-right: 35px;
+  }
   @media (max-width: $breakpoint-medium) {
-    margin-bottom: 30px;
+    top: -19px;
+    margin-bottom: 13px;
     margin-right: 0;
   }
   @media (max-width: $breakpoint-small) {
+    top: 0;
     margin-bottom: 25px;
   }
 }
@@ -84,19 +98,20 @@
   flex-wrap: wrap;
   @media (max-width: $breakpoint-medium) {
     justify-content: space-between;
-    width: 60%;
   }
   @media (max-width: $breakpoint-small) {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    width: auto;
     margin: 28px 0 10px;
   }
 }
 
 .main-header__contacts {
   margin-right: 78px;
+  @media (max-width: $breakpoint-large) {
+    margin-right: 35px;
+  }
   @media (max-width: $breakpoint-medium) {
     order: 1;
   }
@@ -152,7 +167,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: -0.7px;
+  letter-spacing: 0.8px;
   cursor: pointer;
   @media (max-width: $breakpoint-small) {
     display: none;
@@ -163,7 +178,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 0 -15px;
+  margin: 0 -2px 0 -15px;
   @media (max-width: $breakpoint-small) {
     margin-bottom: 50px;
   }
@@ -180,8 +195,10 @@
 
 .main-header__control-item-badge {
   position: absolute;
-  top: -4px;
-  right: -18px;
+  top: -3px;
+  right: -12px;
+  min-width: 18px;
+height: 18px;
   background-color: #6cbcd8;
   font-size: 11px;
   line-height: 1;
@@ -205,7 +222,7 @@
 }
 
 .main-header__main-nav {
-  margin-right: 46px;
+  margin-right: 40px;
   @media (max-width: $breakpoint-medium) {
     margin-right: 0;
   }

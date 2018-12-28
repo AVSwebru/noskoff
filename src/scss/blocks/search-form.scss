@@ -25,11 +25,15 @@
   &::placeholder {
     color: #7c7678;
     font-size: 14px;
+    font-weight: 500;
   }
   &:focus {
     box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
     border: 1px solid #7cb5c9;
     transition: box-shadow 0.25s;
+  }
+  @media (max-width: $breakpoint-large) {
+    width: 220px;
   }
   @media (max-width: $breakpoint-medium) {
     width: 100%;

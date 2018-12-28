@@ -1,12 +1,22 @@
 .home-about {
   padding: 95px 0 75px;
   background: #fff url('../img/lace-gray.png') 0 0 repeat-x;
+  @media (max-width: $breakpoint-medium) {
+    padding: 70px 0 75px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 63px 0 47px;
+  }
 }
 
 .home-about__grid {
   display: grid;
-  grid-template-columns: auto 400px;
+  grid-template-columns: 1.8fr 1fr;
   grid-column-gap: 80px;
+  grid-row-gap: 40px;
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 100%;
+  }
 }
 
 .home-about__banner {
@@ -17,4 +27,12 @@
 
 .home-about__banner-1 {
   margin-bottom: 25px;
+}
+
+.home-about__text {
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.3;
+  }
 }

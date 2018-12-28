@@ -1,19 +1,22 @@
 .city-form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   @media (max-width: $breakpoint-medium) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
 .city-form__label {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: 3px;
   color: #7c7678;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
   @media (max-width: $breakpoint-medium) {
+    margin-left: 0;
     margin-bottom: 0;
     margin-right: 5px;
     font-size: 12px;
@@ -22,7 +25,8 @@
 
 .city-form__select {
   position: relative;
-  width: 100px;
+  width: 95px;
+  height: 20px !important;
   border: none;
   padding: 0;
   color: #1c1c1c;

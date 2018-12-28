@@ -1,11 +1,23 @@
 .best-offers {
   padding: 80px 0 100px;
+  @media (max-width: $breakpoint-medium) {
+    padding: 60px 0 67px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 30px 0 35px;
+  }
 }
 
 .best-offers__tab {
   margin-bottom: 40px;
   &::before {
     display: none;
+  }
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: $breakpoint-small) {
+    justify-content: center;
   }
 }
 
@@ -14,6 +26,9 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
+  @media (max-width: $breakpoint-small) {
+    font-size: 16px;
+  }
 }
 
 .best-offers__grid {
@@ -21,4 +36,15 @@
   grid-template-columns: repeat(auto-fit, 260px);
   grid-column-gap: 30px;
   grid-row-gap: 15px;
+  @media (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(auto-fit, 223px);
+    grid-column-gap: 19px;
+    & > div:nth-child(4) {
+      display: none;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 225px;
+    justify-content: center;
+  }
 }
