@@ -1,0 +1,23 @@
+.cart-option {
+  min-height: 130px;
+  box-sizing: border-box;
+  padding: 30px 26px;
+  border-top: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  &:last-of-type {
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+.cart-option__desc {
+  margin-left: 22px;
+}
+
+.cart-option__custom-checkbox {
+  margin-bottom: 20px;
+}

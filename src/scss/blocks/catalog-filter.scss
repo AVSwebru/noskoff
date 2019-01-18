@@ -1,0 +1,137 @@
+.catalog-filter {
+  padding: 47px 32px 40px 30px;
+  background: #f8f3f1 url('../img/lace-beidge.png') 0 0 repeat-x;
+  background-size: 26px 23px;
+  @media (max-width: $breakpoint-medium) {
+    padding: 47px 14px 40px;
+  }
+}
+
+.catalog-filter__part {
+  margin: 0 0 30px 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter__part-title {
+  margin-bottom: 14px;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.catalog-filter__list {
+  @include reset-list;
+  margin: 0;
+  li {
+    margin-bottom: 20px;
+    &.active {
+      color: #477a93;
+    }
+  }
+  a {
+    color: #5d5c5c;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+.catalog-filter__type-list {
+  margin-left: 13px;
+}
+
+.catalog-filter__price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.catalog-filter__label {
+  color: #5d5c5c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  &--price {
+    margin-right: 6px;
+    @media (max-width: $breakpoint-medium) {
+      margin-right: 4px;
+    }
+  }
+}
+
+.catalog-filter__price-input {
+  width: 70px;
+  height: 30px;
+  border-radius: 17px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: center;
+  color: #5d5c5c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  @include focus;
+  &--from {
+    margin-right: 11px;
+    @media (max-width: $breakpoint-medium) {
+      margin-right: 7px;
+    }
+  }
+}
+
+.catalog-filter__size-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 13px;
+}
+
+.catalog-filter__view-all-brands {
+  @include reset-btn;
+  color: #5499af;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.catalog-filter__submit-btn {
+  @include reset-btn;
+  min-width: 200px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #6cbcd8;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.catalog-filter__reset-btn {
+  @include reset-btn;
+  min-width: 200px;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #6cbcd8;
+  border-radius: 20px;
+  color: #2a2a2a;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.catalog-filter__color-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 17px);
+  grid-column-gap: 13px;
+  grid-row-gap: 10px;
+}

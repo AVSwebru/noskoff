@@ -1,0 +1,24 @@
+.noUi-horizontal {
+  height: 9px;
+}
+
+.noUi-connects .noUi-connect {
+  border: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 17px;
+  height: 17px;
+  box-shadow: 2px 4px 12px rgba(22, 79, 97, 0.58), inset 2px 4px 5px rgba(159, 216, 233, 0.89);
+  border: 1px solid #89cbdf;
+  border-radius: 50%;
+  background-color: #79bdd2;
+  &::before, &::after {
+    display: none;
+  }
+}
+
+.noUi-connect {
+  border: 1px solid #eaeaea;
+  background-color: #79bdd2;
+}

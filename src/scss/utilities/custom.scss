@@ -12,6 +12,12 @@ $tab-item-active-color: #1c1c1c;
 $tab-item-padding-horizontal: 0;
 $tab-item-padding-vertical: 0;
 
+$pagination-margin-horizontal: 5px;
+
+$breadcrumb-item-color: #7c7678;
+$breadcrumb-item-font-size: 12px;
+$breadcrumb-divider-margin-horizontal: 10px;
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
@@ -39,6 +45,14 @@ $tab-item-padding-vertical: 0;
       padding-left: 16px !important;
     }
   }
+}
+
+.uk-breadcrumb > * {
+  margin-bottom: 15px;
+}
+
+.uk-select {
+  background-position: 97% 50% !important;
 }
 
 // 4. Import UIkit.

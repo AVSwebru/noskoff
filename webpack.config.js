@@ -3,41 +3,43 @@ const path = require('path');
 const env = process.env.WEBPACK_ENV;
 
 const PATHS = {
-  source: path.join(__dirname, 'src/'),
-  build: path.join(__dirname, 'dist/')
+  source: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'build')
 };
 
 module.exports = {
   entry: {
-    main: PATHS.source + 'index.js'
+    main: PATHS.source + '/index.js'
   },
   output: {
     path: PATHS.build,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
+  devtool: 'source-map',
   devServer: {
-    index: 'index.html',
-    compress: true,
     port: 9000,
+    compress: true,
     open: true,
-    overlay: true
+    overlay: true,
+    contentBase: PATHS.build
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
-        loader: 'babel-loader',
         exclude: /node_modules/,
+        loader: 'babel-loader',
         query: {
           presets: ['es2015']
         }
       },
       {
         test: /\.(scss)$/,
-        use: [{
+        use: [
+          {
             loader: 'file-loader',
             options: {
-              name: 'main.css',
-              outputPath: 'css/',
+              name: 'css/main.css'
             }
           },
           {
@@ -46,14 +48,14 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false,
-              minimize: env === 'production' ? true : false
+              minimize: env === 'production' ? true : false,
+              url: false
             }
           },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: function() {
+              plugins: function () {
                 return [
                   require('precss'),
                   require('autoprefixer')
@@ -67,21 +69,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: [{
-            loader: 'sass-loader',
-            options: {
-              minimize: env === 'production' ? true : false
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          }
-        ]
-      },
-      {
         test: /\.html$/,
-        use: [{
+        use: [
+          {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]'
@@ -97,45 +87,42 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|webm|mp4|ogg|ogv)/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]?[hash]',
-            outputPath: 'img/'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]?[hash]',
+              outputPath: 'img/'
+            }
           }
-        }]
+        ]
       },
       {
         test: /\.(eot|woff|woff2|ttf|otf)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]?[hash]',
-            outputPath: 'fonts/'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]?[hash]',
+              outputPath: 'fonts/'
+            }
           }
-        }]
+        ]
       }
     ]
   },
   resolve: {
     alias: {
-      "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
-      "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
-      "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
-      "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
-      "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
-      "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
-      "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
+      'TweenLite': path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+      'TweenMax': path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+      'TimelineLite': path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
+      'TimelineMax': path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+      'ScrollMagic': path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+      'animation.gsap': path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+      'debug.addIndicators': path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
     }
   },
   plugins: [
-    new webpack.DefinePlugin({
-      BUNDLED: true,
-      VERSION: '1.0',
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    })
+    new webpack.HotModuleReplacementPlugin()
   ]
-
 };

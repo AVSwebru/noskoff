@@ -1,0 +1,15 @@
+.catalog-retail-pool {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+  margin-bottom: 38px;
+  @media (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(auto-fit, 218px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  @media (max-width: $breakpoint-small) {
+    justify-content: center;
+  }
+}

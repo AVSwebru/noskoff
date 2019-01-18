@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Носкофф</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <div class="page__wrapper">
+    <header class="main-header">
+      <div class="main-header__top">
+        <div class="uk-container">
+          <div class="main-header__top-wrapper">
+            <nav class="customer-nav" aria-label="Навигация по типу покупателя">
+              <ul class="customer-nav__list">
+                <li class="customer-nav__item active">
+                  <a class="customer-nav__link" href="#">Розница</a>
+                </li>
+                <li class="customer-nav__item">
+                  <a class="customer-nav__link" href="#">Оптовикам</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="main-header__rightside">
+              <nav class="main-header__main-nav main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">О нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Новости</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Доставка</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Оплата</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="main-header__header-social-bar header-social-bar">
+                <li class="header-social-bar__item">
+                  <a href="#" class="header-social-bar__link">
+                    <svg class="header-social-bar__icon" width="16" height="16">
+                      <use xlink:href="/img/sprite.svg#in"/>
+                    </svg>
+                    <span class="header-social-bar__link-decor"></span>
+                  </a>
+                </li>
+                <li class="header-social-bar__item">
+                  <a href="#" class="header-social-bar__link">
+                    <svg class="header-social-bar__icon" width="21" height="12">
+                      <use xlink:href="/img/sprite.svg#vk"/>
+                    </svg>
+                    <span class="header-social-bar__link-decor"></span>
+                  </a>
+                </li>
+                <li class="header-social-bar__item">
+                  <a href="#" class="header-social-bar__link">
+                    <svg class="header-social-bar__icon" width="18" height="16">
+                      <use xlink:href="/img/sprite.svg#twitter"/>
+                    </svg>
+                    <span class="header-social-bar__link-decor"></span>
+                  </a>
+                </li>
+              </ul>
+              <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open" type="button" aria-label="Кнопка переключения меню">
+                <span class="menu-btn__line menu-btn__line_first"></span>
+                <span class="menu-btn__line menu-btn__line_second"></span>
+                <span class="menu-btn__line menu-btn__line_third"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__middle">
+        <div class="uk-container">
+          <div class="main-header__middle-wrapper">
+            <div class="main-header__middle-leftside">
+              <a class="main-header__sitetitle" href="#" title="чулочно-носочные изделия 'Носкофф'">
+                <img class="main-header__logo" src="img/logo.png" alt="">
+                <span class="main-header__sitetitle-desc">чулочно-носочные изделия</span>
+              </a>
+              <form class="city-form">
+                <label class="city-form__label" for="city">
+                  Ваш город
+                </label>
+                <select class="city-form__select uk-select" id="city">
+                  <option>Воронеж</option>
+                  <option>Липецк</option>
+                  <option>Белгород</option>
+                </select>
+              </form>
+            </div>
+            <div class="main-header__middle-rightside">
+              <form class="main-header__search-form search-form" aria-label="Форма поиска">
+                <div class="search-form__wrapper">
+                  <input class="search-form__input uk-search" type="text" placeholder="Поиск">
+                  <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
+                </div>
+              </form>
+              <div class="main-header__contacts">
+                <a class="main-header__tel" href="tel:+78001234567">
+                  8 800 123 45 67
+                </a>
+                <div class="main-header__time">
+                  <svg class="main-header__time-icon" width="20" height="20">
+                    <use xlink:href="/img/sprite.svg#clock">
+                  </svg>
+                  <div class="main-header__time-text">
+                    с 9:00 до 20:00
+                  </div>
+                </div>
+              </div>
+              <div class="main-header__control">
+                <button class="main-header__login-btn" type="button">Вход / регистрация</button>
+                <div class="main-header__control-bar">
+                  <a class="main-header__control-item" href="#" title="Отложенные товары">
+                    <svg class="main-header__control-item-icon" width="18" height="18">
+                      <use xlink:href="/img/sprite.svg#heart"/>
+                    </svg>
+                    <span class="main-header__control-item-badge uk-badge">2</span>
+                  </a>
+                  <a class="main-header__control-item" href="#" title="Корзина">
+                    <svg class="main-header__control-item-icon" width="25" height="22">
+                      <use xlink:href="/img/sprite.svg#cart"/>
+                    </svg>
+                    <span class="main-header__control-item-badge uk-badge">8</span>
+                  </a>
+                </div>
+              </div>
+              <button class="main-header__search-btn search-btn" data-uk-icon="icon: search" data-uk-toggle="target: .js-search-adapt" aria-label="Кнопка переключения поиска"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__bottom">
+        <div class="uk-container">
+          <nav class="main-header__category-nav category-nav" aria-label="Навигация по каталогам">
+            <ul class="category-nav__list">
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Женщинам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Мужчинам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Девочкам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Мальчикам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Распродажа</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="menu-nav-adapt js-menu-nav-adapt uk-animation-slide-top" aria-label="Основная навигация">
+        <button class="menu-btn menu-btn--close js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open;" type="button" aria-label="Кнопка переключения меню">
+          <span class="menu-btn__line menu-btn__line_first"></span>
+          <span class="menu-btn__line menu-btn__line_second"></span>
+          <span class="menu-btn__line menu-btn__line_third"></span>
+        </button>
+        <ul class="menu-nav-adapt__list">
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Женщинам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Мужчинам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Девочкам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Мальчикам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Распродажа</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">О нас</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Новости</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Доставка</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Оплата</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Контакты</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Вход/регистрация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-adapt js-search-adapt" hidden>
+        <form class="search-adapt__search-form search-form search-form--adapt" aria-label="Форма поиска">
+          <button class="search-adapt__close-btn uk-close uk-close-large uk-position-top-right" data-uk-close data-uk-toggle="target: .js-search-adapt"></button>
+          <div class="search-form__wrapper">
+            <input class="search-form__input uk-search" type="text" placeholder="Поиск">
+            <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
+          </div>
+        </form>
+        <div class="uk-overlay-primary uk-position-cover" data-uk-toggle="target: .js-search-adapt"></div>
+      </div>
+    </header>
+    <main class="card inner-page">
+      <div class="uk-container">
+        <ul class="breadcrumb uk-breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Женские костюмы и колготки</a></li>
+          <li><span>Колготки женские DOVER</span></li>
+        </ul>
+        <div class="card__main-info">
+          <div>
+            <div class="card__photo-container uk-cover-container">
+              <img data-uk-cover src="img/card.jpg" alt="">
+            </div>
+          </div>
+          <div>
+            <h1 class="card__title">Колготки женские DOVER</h1>
+            <div class="card__info">75% хлопок, 20% полиамид, 5% эластан</div>
+            <div class="card__articul">Артикул: 139531000</div>
+            <select class="card__select-size card__select uk-select">
+              <option>Выбрать размер</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+            </select>
+            <button class="card__size-table-btn" type="button">Таблица соответствий размеров</button>
+            <select class="card__select-color card__select uk-select">
+              <option>Выбрать цвет</option>
+              <option value="Красный">Красный</option>
+              <option value="Зелёный">Зелёный</option>
+              <option value="Синий">Синий</option>
+            </select>
+            <div class="card__pickup">
+              Самовывоз: <a href="#">Со склада</a>
+            </div>
+            <div class="card__delivery">
+              Курьером: от 100 <span class="rubL">a</span> 11 cентября
+            </div>
+          </div>
+          <div>
+            <div class="card-control">
+              <div class="card-control__price price">
+                160 <span class="rubl">c</span>
+              </div>
+              <div class="card-control__counter counter">
+                <button class="counter__control" type="button">-</button>
+                <input class="counter__input" type="text" value="1" name="count">
+                <button class="counter__control" type="button">+</button>
+              </div>
+              <div class="card-control__cart-buttons">
+                <input class="card-control__purchase-btn purchase-btn" type="button" value="В корзину">
+                <button class="like-btn" type="button">
+                  <svg class="like-btn__icon">
+                    <use xlink:href="/img/sprite.svg#heart"/>
+                  </svg>
+                </button>
+              </div>
+              <button class="card-control__quick-order-btn quick-order-btn" type="button">Быстрый заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="card__about">
+          <div class="card__tab" data-uk-tab>
+            <div class="uk-active">
+              <a class="card__tab-item" href="#">Характеристики </a>
+            </div>
+            <div>
+              <a class="card__tab-item" href="#">Описание</a>
+            </div>
+          </div>
+          <div class="card__switcher uk-switcher">
+            <div class="card__properties">
+              <div class="card__property">
+                <div class="card__property-name">Материал</div>
+                <div class="card__property-value">75% хлопок, 20% полиамид, 5% эластан</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Модель</div>
+                <div class="card__property-value">Укороченная</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Страна производства</div>
+                <div class="card__property-value">Россия</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Коллекция</div>
+                <div class="card__property-value">Весна-лето 2017</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Сезон</div>
+                <div class="card__property-value">Демисезон</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Материал</div>
+                <div class="card__property-value">75% хлопок, 20% полиамид, 5% эластан</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Модель</div>
+                <div class="card__property-value">Укороченная</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Страна производства</div>
+                <div class="card__property-value">Россия</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Коллекция</div>
+                <div class="card__property-value">Весна-лето 2017</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Сезон</div>
+                <div class="card__property-value">Демисезон</div>
+              </div>
+            </div>
+            <div class="card__desc">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+        <section class="card__more">
+          <h2 class="card__more-title">Вам могут понравиться</h2>
+          <div class="card__more-grid">
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-1.jpg" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-2.jpg" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-3.jpg" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-4.jpg" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__top">
+        <div class="uk-container">
+          <div class="main-footer__top-wrapper">
+            <nav class="main-footer__footer-nav footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Мужчинам
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Новинки
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Оптовикам
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Женщинам
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Распродажа
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Оплата
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Контакты
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">
+                    Детям
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="main-footer__tel" href="tel:+78001234567">8 800 123 45 67</a>
+            <ul class="main-footer__footer-social-bar footer-social-bar">
+                <li class="footer-social-bar__item">
+                  <a class="footer-social-bar__link" href="#">
+                    <svg class="footer-social-bar__icon" width="16" height="16">
+                      <use xlink:href="/img/sprite.svg#in"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-bar__item">
+                  <a class="footer-social-bar__link" href="#">
+                    <svg class="footer-social-bar__icon" width="21" height="12">
+                      <use xlink:href="/img/sprite.svg#vk"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-bar__item">
+                  <a class="footer-social-bar__link" href="#">
+                    <svg class="footer-social-bar__icon" width="18" height="16">
+                      <use xlink:href="/img/sprite.svg#twitter"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="uk-container">
+          <div class="main-footer__bottom-wrapper">
+            <div class="main-footer__bottom-leftside">
+              <div class="main-footer__owner">© Носкофф 2018</div>
+              <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
+            </div>
+            <a class="footer-bottom__devs" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" fill="#3f3336" viewBox="0 0 936 316">
+                <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
+                  C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
+                  l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
+                  C102.1,120.4,103.2,124.4,101.5,127.5z"/>
+                <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
+                  C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
+                  c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z"/>
+                <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
+                  s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
+                  c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z"/>
+                <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z"/>
+                <text style="font-family: 'Open Sans', sans-serif;
+                font-size: 110px; fill: #6e6364;" x="400" y="130">Сделано в</text>
+                <text style="font-family: 'Open Sans', sans-serif;
+                font-size: 110px; letter-spacing: 3px; fill: #6e6364;" x="400" y="270" textLength="550">#avsweb</text>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

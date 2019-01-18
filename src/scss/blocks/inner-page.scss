@@ -1,0 +1,6 @@
+.inner-page {
+  padding-bottom: 110px;
+  @media (max-width: $breakpoint-small) {
+    padding-bottom: 66px;
+  }
+}

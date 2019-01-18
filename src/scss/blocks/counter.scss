@@ -1,0 +1,25 @@
+.counter {
+  display: flex;
+  width: 80px;
+}
+
+.counter__control {
+  @include reset-btn;
+  width: 25px;
+  height: 25px;
+  color: #5d5c5c;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.counter__input {
+  width: 30px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 500;
+}

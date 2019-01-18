@@ -1,39 +1,40 @@
-.product {
+.product-item {
+  position: relative;
   border: 1px solid #eaeaea;
   transition: box-shadow 0.25s;
   &:hover {
     box-shadow: 2px 4px 16px rgba(156, 146, 148, 0.35);
     border: 1px solid #eaeaea;
     transition: box-shadow 0.25s;
-    .product__more {
+    .product-item__more {
       transform: translateY(0);
       transition: transform 0.25s;
     }
   }
 }
 
-.product__img-wrapper {
+.product-item__img-wrapper {
   height: 220px;
   @media (max-width: $breakpoint-medium) {
     height: 180px;
   }
 }
 
-.product__link {
+.product-item__link {
   @include reset-link;
   display: block;
   &:hover {
-    .product__title {
+    .product-item__title {
       color: #3f8ba4;
     }
   }
 }
 
-.product__desc {
+.product-item__desc {
   padding: 30px 25px 35px;
 }
 
-.product__title {
+.product-item__title {
   @include reset-heading;
   margin-bottom: 25px;
   color: #1c1c1c;
@@ -41,14 +42,21 @@
   font-weight: 500;
 }
 
-.product__price {
-  color: #1c1c1c;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1;
+.product-item__price-row {
+  display: flex;
+  align-items: flex-end;
 }
 
-.product__more {
+.product-item__old-price {
+  margin-right: 15px;
+  color: #5d5c5c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: line-through;
+}
+
+.product-item__more {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -59,17 +67,17 @@
   cursor: pointer;
   &:hover {
     transition: background-color 0.25s;
-    .product__more-link {
+    .product-item__more-link {
       color: #fff;
       background-color: rgba(108, 188, 216, 0.85);
     }
-    .product__like-icon {
+    .product-item__like-icon {
       fill: #fff;
     }
   }
 }
 
-.product__more-link {
+.product-item__more-link {
   @include reset-link;
   position: absolute;
   top: 0;
@@ -85,7 +93,7 @@
   background-color: rgba(255,255,255,0.5);
 }
 
-.product__like {
+.product-item__like {
   @include reset-btn;
   position: absolute;
   top: 10px;
@@ -96,8 +104,25 @@
   cursor: pointer;
 }
 
-.product__like-icon {
+.product-item__like-icon {
   width: 14px;
   height: 13px;
   fill: #4d4d4d;
+}
+
+.product-item__discount-marker {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  min-width: 45px;
+  box-sizing: border-box;
+  padding: 6px;
+  background-color: #f2485c;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
 }
