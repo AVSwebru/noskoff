@@ -225,7 +225,7 @@
           <form class="catalog-filter js-catalog-filter">
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Женщинам</legend>
-              <ul class="catalog-filter__list catalog-filter__list--type">
+              <ul class="catalog-filter__list catalog-filter__type-list">
                 <li class="active"><a href="#">Колготки и чулки</a></li>
                 <li><a href="#">Леггинсы</a></li>
                 <li><a href="#">Носки</a></li>
@@ -234,77 +234,80 @@
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Цена, <span class="rubl">a</span></legend>
               <div class="catalog-filter__price-row">
-                <span class="catalog-filter__label catalog-filter__label--price">от</span><input class="catalog-filter__price-input catalog-filter__price-input--from" name="catalog-filter-price-from" type="text" value="109">
-                <span class="catalog-filter__label catalog-filter__label--price">до</span><input class="catalog-filter__price-input" name="catalog-filter-price-to" type="text" value="1200">
+                <span class="catalog-filter__label catalog-filter__label--price">от</span>
+                <input class="catalog-filter__price-input catalog-filter__price-input--from js-catalog-filter-min" name="catalog-filter-price-from" type="text" value="0">
+                <span class="catalog-filter__label catalog-filter__label--price">до</span>
+                <input class="catalog-filter__price-input js-catalog-filter-max" id="input-number" name="catalog-filter-price-to" type="text" value="9000">
               </div>
+              <div id="slider"></div>
             </fieldset>
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Размер</legend>
               <div class="catalog-filter__size-layout">
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-1" value="30">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-1">30</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-30" value="30">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-30">30</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-2" value="30">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-2">31</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-31" value="31">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-31">31</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-3" value="30">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-3">32</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-32" value="32">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-32">32</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-4" value="33">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-4">33</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-33" value="33">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-33">33</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-5" value="34">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-5">34</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-34" value="34">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-34">34</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-6" value="35">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-6">35</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-35" value="35">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-35">35</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-7" value="36">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-7">36</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-36" value="36">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-36">36</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-8" value="37">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-8">37</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-37" value="37">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-37">37</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-9" value="38">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-9">38</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-38" value="38">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-38">38</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-10" value="39">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-10">39</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-39" value="39">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-39">39</label>
                   </div>
                 </div>
                 <div>
-                  <div class="catalog-filter__size">
-                    <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-11" value="40">
-                    <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-size-11">40</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-40" value="40">
+                    <label class="custom-checkbox__label" for="catalog-filter-size-40">40</label>
                   </div>
                 </div>
               </div>
@@ -313,46 +316,146 @@
               <legend class="catalog-filter__part-title">Состав</legend>
               <ul class="catalog-filter__list">
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-1" value="Хлопок">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-consist-1">Хлопок</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-1" value="Хлопок">
+                    <label class="custom-checkbox__label" for="catalog-filter-consist-1">Хлопок</label>
+                  </div>
                 </li>
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-2" value="Шерсть">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-consist-2">Шерсть</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-2" value="Шерсть">
+                    <label class="custom-checkbox__label" for="catalog-filter-consist-2">Шерсть</label>
+                  </div>
                 </li>
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-3" value="Полиэстер">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-consist-3">Полиэстер</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-3" value="Полиэстер">
+                    <label class="custom-checkbox__label" for="catalog-filter-consist-3">Полиэстер</label>
+                  </div>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Бренд</legend>
-              <ul class="catalog-filter__list">
+              <ul class="catalog-filter__list js-brands-list">
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-1" value="A.Karina">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-brand-1">A.Karina</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-1" value="Полиэстер">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-1">A.Karina</label>
+                  </div>
                 </li>
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-2" value="ABSOLUTEX">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-brand-2">ABSOLUTEX</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-2" value="ABSOLUTEX">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-2">ABSOLUTEX</label>
+                  </div>
                 </li>
                 <li>
-                  <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-3" value="ALLBrands">
-                  <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-brand-3">ALLBrands</label>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-3" value="ALLBrands">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-3">ALLBrands</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-4" value="Полиэстер">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-4">A.Karina</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-5" value="ABSOLUTEX">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-5">ABSOLUTEX</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox catalog-filter__label">
+                    <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-6" value="ALLBrands">
+                    <label class="custom-checkbox__label" for="catalog-filter-brand-6">ALLBrands</label>
+                  </div>
                 </li>
               </ul>
-              <button class="catalog-filter__view-all-brands js-view-all-brands">Показать все</button>
+              <button class="catalog-filter__view-all-brands js-view-all-brands" type="button">Показать все</button>
             </fieldset>
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Цвет</legend>
+              <div class="catalog-filter__color-layout">
+                <div>
+                  <div class="color-checkbox color-checkbox--black">
+                    <input class="color-checkbox__input" id="catalog-filter-color-black" type="checkbox" name="catalog-filter-color" value="black">
+                    <label class="color-checkbox__label" for="catalog-filter-color-black">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--white">
+                    <input class="color-checkbox__input" id="catalog-filter-color-white" type="checkbox" name="catalog-filter-color" value="white">
+                    <label class="color-checkbox__label" for="catalog-filter-color-white">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--cream">
+                    <input class="color-checkbox__input" id="catalog-filter-color-cream" type="checkbox" name="catalog-filter-color" value="cream">
+                    <label class="color-checkbox__label" for="catalog-filter-color-cream">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--gray">
+                    <input class="color-checkbox__input" id="catalog-filter-color-gray" type="checkbox" name="catalog-filter-color" value="gray">
+                    <label class="color-checkbox__label" for="catalog-filter-color-gray">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--red">
+                    <input class="color-checkbox__input" id="catalog-filter-color-red" type="checkbox" name="catalog-filter-color" value="red">
+                    <label class="color-checkbox__label" for="catalog-filter-color-red">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--blue">
+                    <input class="color-checkbox__input" id="catalog-filter-color-blue" type="checkbox" name="catalog-filter-color" value="blue">
+                    <label class="color-checkbox__label" for="catalog-filter-color-blue">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--green">
+                    <input class="color-checkbox__input" id="catalog-filter-color-green" type="checkbox" name="catalog-filter-color" value="green">
+                    <label class="color-checkbox__label" for="catalog-filter-color-green">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--pink">
+                    <input class="color-checkbox__input" id="catalog-filter-color-pink" type="checkbox" name="catalog-filter-color" value="pink">
+                    <label class="color-checkbox__label" for="catalog-filter-color-pink">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--purple">
+                    <input class="color-checkbox__input" id="catalog-filter-color-purple" type="checkbox" name="catalog-filter-color" value="purple">
+                    <label class="color-checkbox__label" for="catalog-filter-color-purple">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--azure">
+                    <input class="color-checkbox__input" id="catalog-filter-color-azure" type="checkbox" name="catalog-filter-color" value="azure">
+                    <label class="color-checkbox__label" for="catalog-filter-color-azure">
+                  </div>
+                </div>
+                <div>
+                  <div class="color-checkbox color-checkbox--orange">
+                    <input class="color-checkbox__input" id="catalog-filter-color-orange" type="checkbox" name="catalog-filter-color" value="orange">
+                    <label class="color-checkbox__label" for="catalog-filter-color-orange">
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-filter__part">
               <legend class="catalog-filter__part-title">Распродажа</legend>
-                <input class="catalog-filter__checkbox-input" type="checkbox" name="catalog-filter-discount" id="catalog-filter-discount" value="ALLBrands">
-                <label class="catalog-filter__checkbox-label catalog-filter__label" for="catalog-filter-discount">Только товары со скидкой</label>
+              <div class="custom-checkbox catalog-filter__label">
+                <input class="custom-checkbox__input" type="checkbox" name="catalog-filter-discount" id="catalog-filter-discount" value="discount">
+                <label class="custom-checkbox__label" for="catalog-filter-discount">Только товары со скидкой</label>
+              </div>
             </fieldset>
-            <button class="catalog-filter__submit-btn" type="submit">Применить</button>
+            <input class="catalog-filter__submit-btn" type="submit" value="Применить">
             <button class="catalog-filter__reset-btn" type="button">Сбросить фильтр</button>
           </form>
         </div>
@@ -360,170 +463,170 @@
           <h1 class="page-title">Женские колготки и чулки</h1>
           <div class="catalog-retail-pool">
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price-row">
-                    <div class="product-card__old-price">
+                  <div class="product-item__price-row">
+                    <div class="product-item__old-price">
                       195 <span class="rubl">c</span>
                     </div>
-                    <div class="product-card__price">
+                    <div class="price">
                       160 <span class="rubl">c</span>
                     </div>
                   </div>
                 </div>
-                <div class="product-card__discount-marker">
+                <div class="product-item__discount-marker">
                   -25%
                 </div>
               </div>
             </div>
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price">
+                  <div class="price">
                     160 <span class="rubl">c</span>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price">
+                  <div class="price">
                     160 <span class="rubl">c</span>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price">
+                  <div class="price">
                     160 <span class="rubl">c</span>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price">
+                  <div class="price">
                     160 <span class="rubl">c</span>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <div class="product-card">
-                <div class="product-card__img-wrapper uk-cover-container">
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
                   <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-card__more">
-                    <a class="product-card__more-link" href="#">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
                       Подробнее
                     </a>
-                    <button class="product-card__like" type="button">
-                      <svg class="product-card__like-icon">
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
                         <use xlink:href="img/sprite.svg#heart"/>
                       </svg>
                     </button>
                   </div>
                 </div>
-                <div class="product-card__desc">
-                  <a class="product-card__link" href="#">
-                    <h3 class="product-card__title">
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
                       Носки мужские DiWaRi Classic 5С-08С
                     </h3>
                   </a>
-                  <div class="product-card__price">
+                  <div class="price">
                     160 <span class="rubl">c</span>
                   </div>
                 </div>

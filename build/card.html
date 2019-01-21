@@ -85,7 +85,7 @@
           <div class="main-header__middle-wrapper">
             <div class="main-header__middle-leftside">
               <a class="main-header__sitetitle" href="#" title="чулочно-носочные изделия 'Носкофф'">
-                <img class="main-header__logo" src="img/logo.png" alt="">
+                <img class="main-header__logo" src="img/logo.png?b02badf348214ada57ee76d6d67c669c" alt="">
                 <span class="main-header__sitetitle-desc">чулочно-носочные изделия</span>
               </a>
               <form class="city-form">
@@ -215,225 +215,228 @@
           <li><a href="#">Женские костюмы и колготки</a></li>
           <li><span>Колготки женские DOVER</span></li>
         </ul>
-        <h1 class="page-title">Корзина</h1>
-        <form>
-          <div class="cart__fields">
-            <div class="cart__field-price">Цена</div>
-            <div class="cart__field-count">Количество</div>
-            <div class="cart__field-sum">Сумма</div>
+        <div class="card__main-info">
+          <div>
+            <div class="card__photo-container uk-cover-container">
+              <img data-uk-cover src="img/card.jpg?7d16d6affaa3853327de0654160e8dc2" alt="">
+            </div>
           </div>
-          <div class="cart__pool">
-            <div class="cart-item">
-              <div class="cart-item__desc">
-                <a class="cart-item__photo-container uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg" alt="">
-                </a>
-                <div>
-                  <a class="cart-item__title-link" href="#">
-                    <h2 class="cart-item__title">Колготки женские DOVER</h2>
-                  </a>
-                  <div class="cart-item__articul">Артикул: 139531000</div>
-                  <div class="cart-item__color">
-                    Цвет: <span class="color-block color-block--cream"></span>
-                  </div>
-                  <div class="cart-item__size">
-                    Размер: XS
-                  </div>
-                </div>
-              </div>
-              <div class="cart-item__price cart-item__field">
-                <div class="cart-item__field-text">Цена</div>
-                <div class="price">
-                  160 <span class="rubl">c</span>
-                </div>
-              </div>
-              <div class="cart-item__counter cart-item__field">
-                <div class="cart-item__field-text">Количество</div>
-                <div class="counter">
-                  <button class="counter__control" type="button">-</button>
-                  <input class="counter__input" type="text" value="1" name="count">
-                  <button class="counter__control" type="button">+</button>
-                </div>
-              </div>
-              <div class="cart-item__total cart-item__field">
-                <div class="cart-item__field-text">Сумма</div>
-                <div class="price">
-                  320 <span class="rubl">c</span>
-                </div>
-              </div>
-              <button class="cart-item__remove-btn remove-btn" type="button">
-                <span class="remove-btn__icon" data-uk-icon="icon: close"></span>
-                <span class="remove-btn__text">Удалить</span>
-              </button>
+          <div>
+            <h1 class="card__title">Колготки женские DOVER</h1>
+            <div class="card__info">75% хлопок, 20% полиамид, 5% эластан</div>
+            <div class="card__articul">Артикул: 139531000</div>
+            <select class="card__select-size card__select uk-select">
+              <option>Выбрать размер</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+            </select>
+            <button class="card__size-table-btn" type="button">Таблица соответствий размеров</button>
+            <select class="card__select-color card__select uk-select">
+              <option>Выбрать цвет</option>
+              <option value="Красный">Красный</option>
+              <option value="Зелёный">Зелёный</option>
+              <option value="Синий">Синий</option>
+            </select>
+            <div class="card__pickup">
+              Самовывоз: <a href="#">Со склада</a>
             </div>
-            <div class="cart-item">
-            <div class="cart-item__desc">
-              <a class="cart-item__photo-container uk-cover-container">
-                <img data-uk-cover src="img/product-1.jpg" alt="">
-              </a>
-              <div>
-                <a class="cart-item__title-link" href="#">
-                  <h2 class="cart-item__title">Колготки женские DOVER</h2>
-                </a>
-                <div class="cart-item__articul">Артикул: 139531000</div>
-                <div class="cart-item__color">
-                  Цвет: <span class="color-block color-block--cream"></span>
-                </div>
-                <div class="cart-item__size">
-                  Размер: XS
-                </div>
-              </div>
+            <div class="card__delivery">
+              Курьером: от 100 <span class="rubL">a</span> 11 cентября
             </div>
-            <div class="cart-item__price cart-item__field">
-              <div class="cart-item__adaptive-field">Цена</div>
-              <div class="price">
+          </div>
+          <div>
+            <div class="card-control">
+              <div class="card-control__price price">
                 160 <span class="rubl">c</span>
               </div>
-            </div>
-            <div class="cart-item__counter cart-item__field">
-              <div class="cart-item__adaptive-field">Количество</div>
-              <div class="counter">
+              <div class="card-control__counter counter">
                 <button class="counter__control" type="button">-</button>
                 <input class="counter__input" type="text" value="1" name="count">
                 <button class="counter__control" type="button">+</button>
               </div>
+              <div class="card-control__cart-buttons">
+                <input class="card-control__purchase-btn purchase-btn" type="button" value="В корзину">
+                <button class="like-btn" type="button">
+                  <svg class="like-btn__icon">
+                    <use xlink:href="/img/sprite.svg#heart"/>
+                  </svg>
+                </button>
+              </div>
+              <button class="card-control__quick-order-btn quick-order-btn" type="button">Быстрый заказ</button>
             </div>
-            <div class="cart-item__total cart-item__field">
-              <div class="cart-item__adaptive-field">Сумма</div>
-              <div class="price">
-                320 <span class="rubl">c</span>
-              </div>
-            </div>
-            <button class="cart-item__remove-btn remove-btn" type="button">
-              <span class="remove-btn__icon" data-uk-icon="icon: close"></span>
-              <span class="remove-btn__text">Удалить</span>
-            </button>
           </div>
-          </div>
-          <div class="cart__total">
-            Итого: 1200 <span class="rubl">c</span>
-          </div>
-          <fieldset class="cart__contacts-section cart__section">
-            <legend class="page-title">Контактные данные</legend>
-            <div class="cart-contacts">
-              <div>
-                <div class="cart-contacts__row">
-                  <label class="cart-contacts__label" for="cart-contacts-name">Имя</label>
-                  <input class="cart-contacts__input uk-input" id="cart-contacts-name" name="cart-contacts-name" type="text">
-                </div>
-              </div>
-              <div>
-                <div class="cart-contacts__row">
-                  <label class="cart-contacts__label" for="cart-contacts-tel">Телефон</label>
-                  <input class="cart-contacts__input uk-input" id="cart-contacts-tel" name="cart-contacts-tel" type="tel">
-                </div>
-              </div>
-              <div>
-                <div class="cart-contacts__row">
-                  <label class="cart-contacts__label" for="cart-contacts-email">Email</label>
-                  <input class="cart-contacts__input uk-input" id="cart-contacts-email" name="cart-contacts-email" type="email">
-                </div>
-              </div>
-              <div>
-                <div class="cart-contacts__row">
-                  <label class="cart-contacts__label" for="cart-contacts-address">Адрес доставки</label>
-                  <select class="cart-contacts__select uk-select" id="cart-contacts-address" name="cart-contacts-address" type="text">
-                    <option>Воронеж</option>
-                    <option>Хогвартс</option>
-                  </select>
-                </div>
-              </div>
-              <div class="cart-contacts__comment">
-                <div class="cart-contacts__row">
-                  <label class="cart-contacts__label" for="cart-contacts-comment">Комментарий</label>
-                  <textarea class="cart-contacts__textarea uk-textarea" id="cart-contacts-comment" name="cart-contacts-comment"></textarea>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <div class="cart__bottom-layout">
-            <div class="cart__delivery">
-              <fieldset class="cart__section">
-                <legend class="page-title">Доставка</legend>
-                <div class="cart-option">
-                  <div class="cart-option__custom-checkbox custom-checkbox">
-                    <input class="custom-checkbox__input" id="cart-delivery-courier" type="radio" name="cart-delivery" value="courier">
-                    <label class="custom-checkbox__label" for="cart-delivery-courier">Курьер</label>
-                  </div>
-                  <div class="cart-option__desc">
-                    Товар доставляется курьером до двери Вашего дома.<br>
-                    Стоимость <strong>500<span class="rubl">c</span></strong>
-                  </div>
-                </div>
-                <div class="cart-option">
-                  <div class="cart-option__custom-checkbox custom-checkbox">
-                    <input class="custom-checkbox__input" id="cart-delivery-mail" type="radio" name="cart-delivery" value="mail">
-                    <label class="custom-checkbox__label" for="cart-delivery-mail">Почта России</label>
-                  </div>
-                  <div class="cart-option__desc">
-                    Товар доставляется курьером до двери Вашего дома.<br>
-                    Стоимость <strong>600<span class="rubl">c</span></strong>
-                  </div>
-                </div>
-                <div class="cart-option">
-                  <div class="cart-option__custom-checkbox custom-checkbox">
-                    <input class="custom-checkbox__input" id="cart-delivery-1" type="radio" name="cart-delivery" value="courier">
-                    <label class="custom-checkbox__label" for="cart-delivery-1">Самовывоз</label>
-                  </div>
-                  <div class="cart-option__desc">
-                    Осуществляется со склада по адресу: Пушкинская, 25<br>
-                    <strong>Бесплатно</strong>
-                  </div>
-                </div>
-              </fieldset>
+        </div>
+        <div class="card__about">
+          <div class="card__tab" data-uk-tab>
+            <div class="uk-active">
+              <a class="card__tab-item" href="#">Характеристики </a>
             </div>
             <div>
-              <fieldset class="cart__section">
-                <legend class="page-title">Способ оплаты</legend>
-                <div class="cart-option">
-                  <div class="cart-option__custom-checkbox custom-checkbox">
-                    <input class="custom-checkbox__input" id="cart-payment-cash" type="radio" name="cart-payment" value="cash">
-                    <label class="custom-checkbox__label" for="cart-payment-cash">Наличными при получении</label>
-                  </div>
-                  <div class="cart-option__desc">
-                    Оплата при получении курьеру или в пункте самовывоза
+              <a class="card__tab-item" href="#">Описание</a>
+            </div>
+          </div>
+          <div class="card__switcher uk-switcher">
+            <div class="card__properties">
+              <div class="card__property">
+                <div class="card__property-name">Материал</div>
+                <div class="card__property-value">75% хлопок, 20% полиамид, 5% эластан</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Модель</div>
+                <div class="card__property-value">Укороченная</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Страна производства</div>
+                <div class="card__property-value">Россия</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Коллекция</div>
+                <div class="card__property-value">Весна-лето 2017</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Сезон</div>
+                <div class="card__property-value">Демисезон</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Материал</div>
+                <div class="card__property-value">75% хлопок, 20% полиамид, 5% эластан</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Модель</div>
+                <div class="card__property-value">Укороченная</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Страна производства</div>
+                <div class="card__property-value">Россия</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Коллекция</div>
+                <div class="card__property-value">Весна-лето 2017</div>
+              </div>
+              <div class="card__property">
+                <div class="card__property-name">Сезон</div>
+                <div class="card__property-value">Демисезон</div>
+              </div>
+            </div>
+            <div class="card__desc">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+        <section class="card__more">
+          <h2 class="card__more-title">Вам могут понравиться</h2>
+          <div class="card__more-grid">
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <div class="cart-option">
-                  <div class="cart-option__custom-checkbox custom-checkbox">
-                    <input class="custom-checkbox__input" id="cart-payment-card" type="radio" name="cart-payment" value="card">
-                    <label class="custom-checkbox__label" for="cart-payment-card">Банковской картой</label>
-                  </div>
-                  <div class="cart-option__desc">
-                    Visa / Master Card / МИР
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="price">
+                    160 <span class="rubl">c</span>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div>
-              <div class="cart-total">
-                <div>
-                  <div class="cart-total__info">
-                    Товаров на: <strong>1200&nbsp;<span class="rubl">c</span></strong><br>
-                    Доставка: <strong>500&nbsp;<span class="rubl">c</span></strong>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-2.jpg?98a565232e5575bf2be126c18aecc28f" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <div>
-                  <div class="cart-total__result">
-                    Итого к оплате: 1700&nbsp;<span class="rubl">c</span>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-3.jpg?62c9648a0c3291706824c9d42652ece4" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="product-item">
+                <div class="product-item__img-wrapper uk-cover-container">
+                  <img data-uk-cover src="img/product-4.jpg?8aed90b49558ca2114da2f92e49e3606" alt="">
+                  <div class="product-item__more">
+                    <a class="product-item__more-link" href="#">
+                      Подробнее
+                    </a>
+                    <button class="product-item__like" type="button">
+                      <svg class="product-item__like-icon">
+                        <use xlink:href="img/sprite.svg#heart"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-item__desc">
+                  <a class="product-item__link" href="#">
+                    <h3 class="product-item__title">
+                      Носки мужские DiWaRi Classic 5С-08С
+                    </h3>
+                  </a>
+                  <div class="product-item__price">
+                    160 <span class="rubl">c</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cart__confirm">
-            <input class="cart__submit-btn" type="submit" value="Оформить заказ">
-            <div class="cart__agreement">
-              <input class="cart__agreement-input" id="cart-agreement" type="checkbox" name="cart-agreement">
-              <label class="cart__agreement-label" for="cart-agreement">Я согласен(на) <a href="#">с условиями обслуживания</a></label>
-            </div>
-          </div>
-        </form>
+        </section>
       </div>
     </main>
     <footer class="main-footer">

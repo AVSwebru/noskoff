@@ -2,6 +2,9 @@
   display: flex;
   margin-bottom: 17px;
   padding-left: 50%;
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
 }
 
 .cart__field-price {

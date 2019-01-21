@@ -1,5 +1,21 @@
 .remove-btn {
   @include reset-btn;
   color: #f2485c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
   cursor: pointer;
+}
+
+.remove-btn__icon {
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.remove-btn__text {
+  display: none;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
 }
