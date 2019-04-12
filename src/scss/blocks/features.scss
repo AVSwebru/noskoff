@@ -16,9 +16,6 @@
   align-items: center;
   justify-content: space-around;
   @media (max-width: $breakpoint-medium) {
-    justify-content: space-between;
-  }
-  @media (max-width: $breakpoint-small) {
     flex-direction: column;
   }
 }
@@ -32,23 +29,24 @@
   @media (max-width: $breakpoint-medium) {
     width: 196px;
     height: 164px;
+    margin-bottom: 80px;
   }
   @media (max-width: $breakpoint-small) {
     width: 185px;
     height: 135px;
-      margin-bottom: 25px;
   }
 }
 
 .features__item-2 {
   position: relative;
-  width: 238px;
+  width: 280px;
   height: 188px;
   background: url('../img/features-2.png') 50% 50% no-repeat;
   background-size: contain;
   @media (max-width: $breakpoint-medium) {
     width: 208px;
     height: 121px;
+    margin-bottom: 30px;  
   }
   @media (max-width: $breakpoint-small) {
     height: 104px;
@@ -77,9 +75,9 @@
   font-family: $font-decor;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   @media (max-width: $breakpoint-medium) {
-    font-size: 19px;
+    font-size: 18px;
   }
   @media (max-width: $breakpoint-small) {
     font-size: 16px;
@@ -88,20 +86,24 @@
 
 .features__item-1-text-1 {
   position: absolute;
-  top: 50%;
-  left: 21%;
+  top: 52%;
+  left: 14%;
 }
 
 .features__item-1-text-2 {
   position: absolute;
   top: 51%;
-  left: 63%;
+  left: 61%;
 }
 
 .features__item-1-text-3 {
   position: absolute;
-  top: 78%;
-  left: 20%;
+  top: 100%;
+  left: 11%;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    left: 15%;
+  }
 }
 
 .features__item-1-text-4 {
@@ -113,52 +115,52 @@
 .features__item-2-text-1 {
   position: absolute;
   top: 11%;
-  left: 40%;
+  left: 42%;
   @media (max-width: $breakpoint-medium) {
-    top: -3%;
+    top: 6%;
     left: 41%;
   }
   @media (max-width: $breakpoint-small) {
     top: -2%;
-    left: 43%;
+    left: 42%;
   }
-
 }
 
 .features__item-2-text-2 {
   position: absolute;
-  top: 44%;
-  left: 40%;
+  top: 39%;
+  left: 44%;
   font-size: 28px;
+  line-height: 0.7;
   @media (max-width: $breakpoint-medium) {
-    top: 41%;
-    left: 41%;
-    font-size: 24px;
+    top: 34%;
+    left: 44%;
+    font-size: 20px;
   }
   @media (max-width: $breakpoint-small) {
-    top: 40%;
+    top: 32%;
     font-size: 21px;
   }
 }
 
 .features__item-2-text-3 {
   position: absolute;
-  top: 76%;
-  left: 28%;
+  top: 75%;
+  left: 24%;
   @media (max-width: $breakpoint-medium) {
-    top: 84%;
-    left: 29%;
+    top: 80%;
+    left: 21%;
   }
   @media (max-width: $breakpoint-small) {
-    top: 86%;
-    left: 32%;
+    top: 85%;
+    left: 25%;
   }
 }
 
 .features__item-3-text-1 {
   position: absolute;
   top: -8%;
-  left: 44%;
+  left: 40%;
   font-size: 26px;
   @media (max-width: $breakpoint-medium) {
     top: -6%;
@@ -172,9 +174,10 @@
 
 .features__item-3-text-2 {
   position: absolute;
-  top: 73%;
-  left: 33%;
+  top: 80%;
+  left: 37%;
   @media (max-width: $breakpoint-medium) {
-    top: 75%;
+    top: 79%;
+    left: 38%;
   }
 }

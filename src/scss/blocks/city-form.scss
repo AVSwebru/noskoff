@@ -10,7 +10,7 @@
 
 .city-form__label {
   margin-bottom: 5px;
-  margin-left: 3px;
+  // margin-left: 3px;
   color: #7c7678;
   font-size: 14px;
   font-weight: 500;
@@ -25,8 +25,9 @@
 
 .city-form__select {
   position: relative;
-  width: 95px;
+  min-width: 95px;
   height: 20px !important;
+  margin-left: -4px;
   border: none;
   padding: 0;
   color: #1c1c1c;

@@ -7,10 +7,16 @@
   @include reset-btn;
   width: 25px;
   height: 25px;
+  border-radius: 50%;
   color: #5d5c5c;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  transition: background-color 0.25;
+  &:hover {
+    background-color: #f8f3f1;
+    transition: background-color 0.25;
+  }
 }
 
 .counter__input {

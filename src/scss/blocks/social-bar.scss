@@ -1,15 +1,16 @@
-.header-social-bar {
+.social-bar {
   @include reset-list;
+  position: relative;
   display: flex;
   align-items: center;
-  margin: -26px -5px 0;
+  margin: 0 -5px;
 }
 
-.header-social-bar__item {
+.social-bar__item {
   margin: 0 5px;
 }
 
-.header-social-bar__link {
+.social-bar__link {
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,7 +21,7 @@
   background-color: #fff;
   &:hover {
     background-color: #7cb5c9;
-    .header-social-bar__link-decor {
+    .social-bar__link-decor {
       height: calc(100% + 30px);
       transition: height 0.25s;
       background-color: #7cb5c9;
@@ -31,13 +32,13 @@
         background: linear-gradient(to left bottom, #7cb5c9 50%, transparent 50%);
       }
     }
-    .header-social-bar__icon {
+    .social-bar__icon {
       fill: #fff;
     }
   }
 }
 
-.header-social-bar__link-decor {
+.social-bar__link-decor {
   transition: height 0.25s;
   position: absolute;
   top: 0;
@@ -66,7 +67,7 @@
   }
 }
 
-.header-social-bar__icon {
+.social-bar__icon {
   position: relative;
   z-index: 1;
   fill: #bcbcbc;

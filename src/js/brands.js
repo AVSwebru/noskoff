@@ -1,18 +1,38 @@
-(function() {
-  var brandList = document.querySelectorAll('.js-brands-list li');
-  var showBrandsBtn = document.querySelector('.js-view-all-brands');
+(function () {
+  
+  var filterListArr = document.querySelectorAll('.js-filter-list');
+  var filterBtnArr = document.querySelectorAll('.js-view-list-btn');
 
-  document.addEventListener('DOMContentLoaded', () => {
-    for (let i = 0; i < brandList.length; i++) {
-      if (i > 2) brandList[i].hidden = true;
-    }
+  if (filterListArr && filterBtnArr) {
+  
+    filterListArr.forEach((element) => {
 
-  })
+      var listItems = element.querySelectorAll('li');
 
-  showBrandsBtn.addEventListener('click', () => {
-    for (let i = 0; i < brandList.length; i++) {
-      if (i > 2) brandList[i].hidden = false;
-    }
-    showBrandsBtn.hidden = true;
-  })
+      for (let i = 0; i < listItems.length; i++) {
+        if (i > 2) listItems[i].hidden = true;
+      }
+    });
+
+    filterBtnArr.forEach((element) => {
+      element.addEventListener('click', () => {
+
+        var currentBtn = element;
+        var listID = element.getAttribute('data-filter-id');
+
+        filterListArr.find = [].find;
+        var list = filterListArr.find((element) => {
+          return element.getAttribute('data-filter-id') == listID;
+        });
+            
+        list.querySelectorAll('li').forEach((element) => {
+          element.hidden = false;
+          currentBtn.hidden = true;
+        });
+
+      });
+    });
+
+  }
+
 })();

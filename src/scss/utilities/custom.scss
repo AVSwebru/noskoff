@@ -3,6 +3,8 @@
 
 $global-font-family: $font-base;
 $base-color: #2d2d2d;
+$base-link-color: #6cbcd8;
+$base-link-hover-color: #6cbcd8;
 
 $container-max-width: 1140px;
 $global-medium-gutter: 15px;
@@ -17,6 +19,10 @@ $pagination-margin-horizontal: 5px;
 $breadcrumb-item-color: #7c7678;
 $breadcrumb-item-font-size: 12px;
 $breadcrumb-divider-margin-horizontal: 10px;
+
+$modal-dialog-width: 748px;
+$modal-body-padding-horizontal: 0;
+$modal-body-padding-vertical: 0;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -53,6 +59,28 @@ $breadcrumb-divider-margin-horizontal: 10px;
 
 .uk-select {
   background-position: 97% 50% !important;
+}
+
+@mixin hook-form-focus() {
+  box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
+  border: 1px solid #7cb5c9;
+  outline: none;
+  transition: box-shadow 0.25s;
+}
+
+@mixin hook-table-header-cell() {
+  padding: 15px;
+  text-align: center;
+  color: #5d5c5c;
+  text-transform: none;
+  font-size: 14px;
+}
+
+@mixin hook-table-cell() {
+  padding: 23px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
 }
 
 // 4. Import UIkit.

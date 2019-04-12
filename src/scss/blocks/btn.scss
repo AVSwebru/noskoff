@@ -1,0 +1,64 @@
+.btn {
+  @include reset-link;
+  @include reset-btn;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  &_default {
+    padding: 15px;
+    background-color: #8bcadf;
+    transition: background-color 0.25s;
+    &:hover {
+      background-color: #73bdd5;
+      transition: background-color 0.25s;
+    }
+    &_dark {
+      color: #000;
+      &:hover {
+        color: #000;
+      }
+    }
+    &_light{
+      background-color: #8bcadf;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
+      outline: none;
+      transition: box-shadow 0.25s;
+    }
+  }
+  &_control {
+    // width: 100%;
+    padding: 10px;
+    border: 1px solid #6cbcd8;
+    background-color: transparent;
+    color: #2a2a2a;
+    &:hover {
+      color: #2a2a2a;
+    }
+  }
+  &_subscribe {
+    min-width: 170px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 17px;
+    transition: background-color 0.25s;
+    &:hover {
+      background-color: #ebe0dc;
+      transition: background-color 0.25s;
+    }
+    @media (max-width: $breakpoint-small) {
+      width: 280px;
+    }
+  }
+}

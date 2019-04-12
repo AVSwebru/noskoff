@@ -1,0 +1,82 @@
+.contacts-form {
+  padding: 47px 30px 55px;
+  border-top: 5px solid  #e8c0b5;
+  background-color: #f8f3f1;
+  text-align: center;
+  @media (max-width: $breakpoint-small) {
+    padding: 47px 10px 55px;
+  }
+}
+
+.contacts-form__title {
+  margin-bottom: 15px;
+  color: #2b2b2b;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.contacts-form__subtitle {
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+
+.contacts-form__fields {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.contacts-form__row {
+  margin-bottom: 25px;
+}
+
+.contacts-form__input {
+  width: 300px;
+  padding: 12px 15px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #6cbcd8;
+  background: transparent;
+  font-size: 16px;
+  &::placeholder {
+    font-size: 14px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
+}
+
+.contacts-form__textarea {
+  width: 300px;
+  height: 110px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #6cbcd8;
+  resize: none;
+  background: transparent;
+  &::placeholder {
+    font-size: 14px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
+}
+
+.contacts-form__submit {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.contacts-form__policy {
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  &:hover {
+    color: #737373;
+  }
+}

@@ -1,0 +1,35 @@
+.orders-table {
+  th:first-child {
+    padding-left: 0;
+    text-align: left;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  tr {
+    border-left: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+  }
+  thead tr {
+    border-left: none;
+    border-right: none;
+  }
+  td {
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 500;
+    &:first-child {
+      padding-left: 40px;
+      text-align: left;
+    }
+    &:last-child {
+      padding-right: 45px;
+    }
+  }
+}
+
+.orders-table__price {
+  color: #1c1c1c;
+  font-weight: 600;
+}

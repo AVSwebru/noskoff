@@ -1,0 +1,50 @@
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f8f3f1;
+}
+
+.modal__title {
+  margin: 0;
+  color: #343434;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.modal__main {
+  display: flex;
+  justify-content: center;
+  padding: 55px 30px 65px;
+  background: url('../img/lace-beige.png') 0 0 repeat-x;
+  @media (max-width: $breakpoint-small) {
+    padding: 55px 10px 65px;
+  }
+}
+
+.modal__anothers-pc {
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal__control-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal__control-link:not(:last-of-type) {
+  margin-bottom: 15px;
+}

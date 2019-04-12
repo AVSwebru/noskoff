@@ -42,7 +42,7 @@
     color: #458fa7;
     transition: color 0.25s;
     &::before {
-      transform:: translate(-50%, 0);
+      transform: translate(-50%, 0);
       transition: transform 0.25s;
     }
   }

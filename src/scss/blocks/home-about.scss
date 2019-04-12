@@ -23,6 +23,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: $breakpoint-small) {
+    display: inline-block;
+  }
 }
 
 .home-about__banner-1 {

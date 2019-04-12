@@ -1,6 +1,6 @@
 .card__main-info {
   display: grid;
-  grid-template-columns: 5fr 3fr 2.5fr;
+  grid-template-columns: 300px 300px 250px;
   grid-gap: 45px;
   margin-bottom: 80px;
   @media (max-width: $breakpoint-medium) {
@@ -18,7 +18,29 @@
 }
 
 .card__photo-container {
-  padding-top: 70%;
+  display: flex;
+  height: 400px;
+}
+
+.card__img {
+  object-fit: contain;
+}
+
+.card__discount-marker {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  min-width: 45px;
+  box-sizing: border-box;
+  padding: 6px;
+  background-color: #f2485c;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .card__title {
@@ -48,6 +70,7 @@
 }
 
 .card__select {
+  display: block !important;
   width: 267px;
   height: 40px;
   padding: 12px 27px;
@@ -64,14 +87,16 @@
   }
 }
 
+.card__sizes {
+  margin-bottom: 28px;
+}
+
 .card__select-size {
   margin-bottom: 13px;
 }
 
-.card__size-table-btn {
+.card__info-btn {
   @include reset-btn;
-  display: block;
-  margin-bottom: 28px;
   margin-left: 10px;
   color: #5499af;
   font-size: 12px;
@@ -151,10 +176,15 @@
   color: #000;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .card__about {
   margin-bottom: 85px;
+}
+
+.card__more {
+  margin-bottom: 50px;
 }
 
 .card__more-title {
