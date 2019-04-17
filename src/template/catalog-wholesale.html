@@ -346,7 +346,8 @@
                     </div>
                   </li>
                 </ul>
-                <button class="catalog-filter__view-btn js-view-list-btn" data-filter-id="1" type="button">Показать все</button>
+                <button class="catalog-filter__view-btn js-view-list-btn" data-filter-id="1" type="button">Показать
+                  все</button>
               </fieldset>
               <fieldset class="catalog-filter__part">
                 <legend class="catalog-filter__part-title">Бренд</legend>
@@ -394,7 +395,8 @@
                     </div>
                   </li>
                 </ul>
-                <button class="catalog-filter__view-btn js-view-list-btn" data-filter-id="2" type="button">Показать все</button>
+                <button class="catalog-filter__view-btn js-view-list-btn" data-filter-id="2" type="button">Показать
+                  все</button>
               </fieldset>
               <fieldset class="catalog-filter__part">
                 <legend class="catalog-filter__part-title">Цвет</legend>
@@ -496,8 +498,8 @@
             <div class="catalog-wholesale-pool">
               <div class="wholesale-item">
                 <div class="wholesale-item__desc">
-                  <a class="wholesale-item__desc-photo uk-cover-container" href="#">
-                    <img data-uk-cover src="../img/product-1.jpg" alt="">
+                  <a class="wholesale-item__desc-photo " href="#">
+                    <img class="wholesale-item__photo" src="../img/product-1.jpg" alt="">
                     <span class="wholesale-item__discount-marker">-25%</span>
                   </a>
                   <div class="wholesale-item__desc-text">
@@ -518,14 +520,13 @@
                       160 <span class="rubl">c</span>
                     </div>
                     <div class="wholesale-item__counter counter">
-                      <button class="counter__control" type="button">-</button>
-                      <input class="counter__input" type="text" value="1" name="count">
-                      <button class="counter__control" type="button">+</button>
+                      <button class="counter__control js-counter-minus" type="button">-</button>
+                      <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                      <button class="counter__control js-counter-plus" type="button">+</button>
                     </div>
                   </div>
                   <div class="wholesale-item__control-rightside">
-                    <input class="wholesale-item__purchase-btn btn btn_default btn_default_light" type="button"
-                      value="В корзину">
+                    <input class="wholesale-item__purchase-btn btn btn_default btn_default_light btn_default_opt-buy" type="button"  value="В корзину">
                     <button class="like-btn" type="button">
                       <svg class="like-btn__icon">
                         <use xlink:href="../img/sprite.svg#heart" />
@@ -544,7 +545,6 @@
               <li><a href="#">12</a></li>
               <li><a class="pagination__next" href="#">Вперёд <span data-uk-icon="icon: arrow-right"></span></a></li>
             </ul>
-
           </div>
         </div>
     </main>

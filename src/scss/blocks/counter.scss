@@ -1,6 +1,10 @@
 .counter {
   display: flex;
+  align-items: center;
   width: 80px;
+  @media (max-width: $breakpoint-small) {
+    width: 100px;
+  }
 }
 
 .counter__control {
@@ -17,6 +21,10 @@
     background-color: #f8f3f1;
     transition: background-color 0.25;
   }
+  @media (max-width: $breakpoint-small) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .counter__input {
@@ -28,4 +36,5 @@
   color: #1c1c1c;
   font-size: 14px;
   font-weight: 500;
+  
 }

@@ -10,7 +10,8 @@
   font-weight: 500;
   cursor: pointer;
   &_default {
-    padding: 15px;
+    min-width: 190px;
+    padding: 10px;
     background-color: #8bcadf;
     transition: background-color 0.25s;
     &:hover {
@@ -23,12 +24,19 @@
         color: #000;
       }
     }
-    &_light{
+    &_light {
       background-color: #8bcadf;
       color: #fff;
       &:hover {
         color: #fff;
       }
+    }
+    &_fluid {
+      min-width: 0;
+      width: 100%;
+    }
+    &_opt-buy {
+      min-width: 148px;
     }
     &:focus {
       box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
@@ -37,11 +45,13 @@
     }
   }
   &_control {
-    // width: 100%;
     padding: 10px;
     border: 1px solid #6cbcd8;
     background-color: transparent;
     color: #2a2a2a;
+    &_fluid {
+      width: 100%;
+    }
     &:hover {
       color: #2a2a2a;
     }

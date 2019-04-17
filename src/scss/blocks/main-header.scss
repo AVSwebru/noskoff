@@ -1,12 +1,25 @@
 .main-header__top {
   padding: 10px 0 8px;
   background-color: #f8f3f1;
+  @media (max-width: $breakpoint-small) {
+    padding: 25px 0;
+    background-color: #fff;
+  }
+}
+
+.main-header__customer-nav {
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
 }
 
 .main-header__top-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: $breakpoint-small) {
+    justify-content: center;
+  }
 }
 
 .main-header__rightside {
@@ -21,9 +34,7 @@
     margin-right: 35px;
   }
   @media (max-width: $breakpoint-medium) {
-    order: 3;
-    width: 100%;
-    margin-top: 25px;
+    width: 220px; 
     margin-right: 0;
   }
   @media (max-width: $breakpoint-small) {
@@ -32,56 +43,36 @@
 }
 
 .main-header__middle {
-  padding: 13px 0 20px;
+  padding: 25px 0 20px;
+  @media (max-width: $breakpoint-small) {
+    background-color: #f8f3f1;
+  }
 }
 
 .main-header__middle-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
 }
 
 .main-header__middle-leftside {
   display: flex;
   align-items: center;
-  margin-right: 20px;
-  @media (max-width: $breakpoint-large) {
-    // margin-right: 35px;
-  }
+  margin-right: 50px;
   @media (max-width: $breakpoint-medium) {
     flex-direction: column;
     align-items: flex-start;
-    // margin-right: 70px;
   }
   @media (max-width: $breakpoint-small) {
-    // margin-right: 25px;
+    display: none;
   }
 }
 
 .main-header__logo {
-  margin-bottom: 5px;
-}
-
-.main-header__sitetitle {
-  @include reset-link;
-  position: relative;
-  top: -4px;
-  display: flex;
-  flex-direction: column;
-  width: 180px;
-  margin-right: 72px;
-  @media (max-width: $breakpoint-large) {
-    margin-right: 35px;
-  }
-  @media (max-width: $breakpoint-medium) {
-    top: -19px;
-    margin-bottom: 13px;
-    margin-right: 0;
-  }
-  @media (max-width: $breakpoint-small) {
-    top: 0;
-    margin-bottom: 25px;
-  }
+  width: 240px;
 }
 
 .main-header__sitetitle-desc {
@@ -90,20 +81,19 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.12px;
+  @media (max-width: $breakpoint-small) {
+    font-size: 16px;
+  }
 }
 
 .main-header__middle-rightside {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   @media (max-width: $breakpoint-medium) {
     justify-content: space-between;
   }
   @media (max-width: $breakpoint-small) {
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 28px 0 10px;
+    display: block;
   }
 }
 
@@ -113,26 +103,27 @@
     margin-right: 35px;
   }
   @media (max-width: $breakpoint-medium) {
-    order: 1;
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
   }
   @media (max-width: $breakpoint-small) {
     display: none;
   }
 }
 
-.main-header__control {
+.main-header__control-left {
+  display: flex;
+  align-items: center;
   @media (max-width: $breakpoint-medium) {
-    order: 2;
-  }
-  @media (max-width: $breakpoint-small) {
-    order: 1;
+    flex-direction: column;
+    margin-right: 50px;
   }
 }
 
 .main-header__tel {
   @include reset-link;
   display: block;
-  margin-bottom: 15px;
   color: #1c1c1c;
   font-size: 20px;
   font-weight: 500;
@@ -162,32 +153,43 @@
   fill: #c8c8c8;
 }
 
-.main-header__control-bar {
+.main-header__buttons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 0 -2px 0 -15px;
   @media (max-width: $breakpoint-small) {
-    margin-bottom: 50px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
   }
 }
 
 .main-header__control-item {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: flex-end;
   width: 26px;
   height: 26px;
   margin: 0 15px;
 }
 
-.main-header__control-item-icon {
+.main-header__control-icon-wishes {
+  width: 22px; 
+  height: 22px;
+  fill: #c8c8c8;
+}
+
+.main-header__control-icon-cart {
+  width: 26px; 
+  height: 26px;
   fill: #c8c8c8;
 }
 
 .main-header__control-item-badge {
   position: absolute;
-  top: -3px;
-  right: -12px;
+  top: -2px;
+  right: -9px;
   min-width: 18px;
   height: 18px;
   background-color: #6cbcd8;
@@ -228,7 +230,6 @@
 
 .main-header__search-btn {
   display: none;
-  order: 2;
   @media (max-width: $breakpoint-small) {
     display: block;
   }

@@ -16,6 +16,8 @@
 }
 
 .search-adapt__close-btn {
+  @include reset-btn;
+  position: absolute;
   top: 7px;
   right: 7px;
   z-index: 2;
@@ -23,4 +25,10 @@
   &:hover {
     color: #fff;
   }
+}
+
+.search-adapt__close-icon {
+  width: 22px;
+  height: 23px;
+  fill: #fff;
 }

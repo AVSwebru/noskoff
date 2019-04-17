@@ -1,5 +1,6 @@
 .like-btn {
   width: 40px;
+  min-width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -8,10 +9,15 @@
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
+  &.liked {
+    .like-btn__icon {
+      fill: #3f8ba4;
+    }
+  }
 }
 
 .like-btn__icon {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
   fill: #6e6e6e;
 }

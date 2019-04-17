@@ -8,7 +8,7 @@
   border-top: 5px solid #e8c0b5;
   margin-bottom: 20px;
   background-color: #f8f3f1;
-  @media (max-width: $breakpoint-small) {
+  @media (max-width: $breakpoint-medium) {
     flex-direction: column;
     padding: 20px 23px;
     align-items: normal;
@@ -31,6 +31,9 @@
 .cart-total__rightside {
   display: flex;
   align-items: center;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
 }
 
 .cart-total__result {
@@ -40,6 +43,7 @@
   font-weight: 700;
   line-height: 1;
   @media (max-width: $breakpoint-small) {
+    margin-bottom: 10px;
     padding-left: 0;
     padding-top: 34px;
   }

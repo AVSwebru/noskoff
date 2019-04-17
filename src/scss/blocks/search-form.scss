@@ -17,7 +17,7 @@
   width: 267px;
   height: 39px;
   box-sizing: border-box;
-  padding: 0 40px 0 23px;
+  padding: 0 50px 0 23px;
   border-radius: 20px;
   border: 1px solid #e5dfdf;
   background-color: #fff;
@@ -28,16 +28,6 @@
     font-size: 14px;
     font-weight: 500;
   }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 7px #6cbcd8;
-    border: 1px solid #7cb5c9;
-    transition: box-shadow 0.25s;
-    @media (max-width: $breakpoint-small) {
-      box-shadow: none;
-      border: none;
-    }
-  }
   @media (max-width: $breakpoint-large) {
     width: 220px;
   }
@@ -46,6 +36,19 @@
   }
 }
 
+.search-form__submit {
+  @include reset-btn;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+}
+
 .search-form__icon {
+  width: 25px;
+  height: 25px;
+  fill: #c8c8c8;
   left: calc(100% - 45px);
 }

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
-  grid-row-gap: 45px;
   grid-auto-flow: column;
   padding: 50px 50px 56px 50px;
   border: 1px solid #eaeaea;
@@ -12,7 +11,6 @@
     justify-content: center;
   }
   @media (max-width: $breakpoint-medium) {
-    grid-row-gap: 30px;
     padding: 32px 18px 40px 18px;
   }
   @media (max-width: $breakpoint-small) {

@@ -30,9 +30,9 @@
   &::before {
     content: '';
     position: absolute;
-    top: -29px;
+    top: -26px;
     left: 50%;
-    transform:: translate(-50%, -27px);
+    transform: translate(-50%, -27px);
     width: 5px;
     height: 18px;
     background-color: #7cb5c9;
@@ -46,7 +46,7 @@
       transition: transform 0.25s;
     }
   }
-  @media (max-width: $breakpoint-medium) {
-    font-size: 12px;
-  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 20px;
+  } 
 }

@@ -1,0 +1,39 @@
+.page-404 {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 5%;
+  background: url('../img/lace-gray.png') 0 0 repeat-x;
+  @media (max-width: $breakpoint-small) {
+    align-items: center;
+  }
+}
+
+.page-404__inner {
+  text-align: center;
+}
+
+.page-404__img {
+  width: 20vmax;
+  min-width: 200px;
+  margin-bottom: 10px;
+}
+
+.page-404__number {
+  font-size: 10vw;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -2px;
+  @media (max-width: $breakpoint-small) {
+    font-size: 100px;
+  }
+}
+
+.page-404__text {
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
