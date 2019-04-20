@@ -214,25 +214,25 @@
             <h1 class="card__title">Колготки женские DOVER</h1>
             <div class="card__info">75% хлопок, 20% полиамид, 5% эластан</div>
             <div class="card__articul">Артикул: 139531000</div>
-            <div class="card__sizes">
-              <select class="card__select-size card__select uk-select">
-                <option>Выбрать размер</option>
+            <label class="card__size">
+              <div class="card__label-text">Выбрать размер</div>
+              <select class="card__select uk-select">
                 <option value="31">31</option>
                 <option value="32">32</option>
                 <option value="33">33</option>
               </select>
-              <button class="card__info-btn" type="button">Таблица соответствий размеров</button>
-            </div>
-            <select class="card__select-color card__select uk-select">
-              <option>Выбрать цвет</option>
-              <option value="Красный">Красный</option>
-              <option value="Зелёный">Зелёный</option>
-              <option value="Синий">Синий</option>
-            </select>
-            <div class="card__pickup">
-              Самовывоз: <button class="card__info-btn" type="button">со склада</button>
-            </div>
+            </label>
+            <button class="card__info-size" type="button" data-uk-toggle="target: #sizes">Таблица соответствий размеров</button>
+            <label class="card__brand">
+              <div class="card__label-text">Выбрать бренд</div>
+              <select class="card__select uk-select">
+                <option value="Красный">Красный</option>
+                <option value="Зелёный">Зелёный</option>
+                <option value="Синий">Синий</option>
+              </select>
+            </label>
             <div class="card__delivery">
+              Самовывоз: <button class="card__info-store" type="button">со склада</button><br>
               Курьером: от 100 <span class="rubl">a</span> 11 cентября
             </div>
           </div>
@@ -241,7 +241,7 @@
               <div class="card-control__price price">
                 160 <span class="rubl">c</span>
               </div>
-              <div class="card-control__counter counter">
+              <div class="card-control__counter counter js-counter">
                 <button class="counter__control js-counter-minus" type="button">-</button>
                 <input class="counter__input js-counter-input" type="text" value="1" name="count">
                 <button class="counter__control js-counter-plus" type="button">+</button>
@@ -263,7 +263,7 @@
         <div class="card__about">
           <div class="card__tab" data-uk-tab>
             <div class="uk-active">
-              <a class="card__tab-item" href="#">Характеристики </a>
+              <a class="card__tab-item" href="#">Характеристики</a>
             </div>
             <div>
               <a class="card__tab-item" href="#">Описание</a>
@@ -539,7 +539,11 @@
 
     <div id="quick-order" data-uk-modal>
       <div class="quick-order uk-modal-dialog uk-modal-body">
-        <button class="modal__close uk-modal-close" data-uk-close type="button"></button>
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-icon">
+            <use xlink:href="../img/sprite.svg#close"/>
+          </svg>
+        </button>
         <div class="modal__header">
           <h2 class="modal__title">
             Быстрый заказ
@@ -565,6 +569,23 @@
             </div>
             <button class="btn btn_default btn_default_light" type="submit">Отправить</button>
           </form>
+        </div>
+      </div>
+    </div>
+    <div id="sizes" data-uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-icon">
+            <use xlink:href="../img/sprite.svg#close"/>
+          </svg>
+        </button>
+        <div class="modal__header">
+          <h2 class="modal__title">
+            Таблица размеров
+          </h2>
+        </div>
+        <div class="modal__main">
+           Размеры
         </div>
       </div>
     </div>

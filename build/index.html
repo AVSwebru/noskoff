@@ -15,13 +15,13 @@
       <div class="main-header__top">
         <div class="uk-container">
           <div class="main-header__top-wrapper js-header-top">
-            <nav class="main-header__customer-nav customer-nav" aria-label="Навигация по типу продаж">
-              <ul class="customer-nav__list">
-                <li class="customer-nav__item active">
-                  <a class="customer-nav__link" href="#">Розница</a>
+            <nav class="main-header__customer-switcher customer-switcher" aria-label="Навигация по типу продаж">
+              <ul class="customer-switcher__list">
+                <li class="customer-switcher__item active">
+                  <a class="customer-switcher__link" href="#">Розница</a>
                 </li>
-                <li class="customer-nav__item">
-                  <a class="customer-nav__link" href="#">Оптовикам</a>
+                <li class="customer-switcher__item">
+                  <a class="customer-switcher__link" href="#">Оптовикам</a>
                 </li>
               </ul>
             </nav>
@@ -219,7 +219,7 @@
       </div>
     </header>
     <main>
-      <div class="home-slider" data-uk-slideshow="min-height: 380; max-height: 660; animation: push">
+      <div class="home-slider" data-uk-slideshow="min-height: 380; max-height: 660; animation: push; autoplay: true">
         <div class="uk-position-relative uk-visible-toggle">
           <ul class="home-slider__items uk-slideshow-items">
             <li>
@@ -797,13 +797,13 @@
     <div class="modal modal-user uk-modal-dialog uk-modal-body">
       <button class="modal__close uk-modal-close" data-uk-close type="button"></button>
       <div class="modal__header">
-        <div class="customer-nav">
-          <ul class="customer-nav__list" data-uk-switcher="connect: .modal__main">
-            <li class="customer-nav__item active">
-              <a class="customer-nav__link" href="#">Вход</a>
+        <div class="customer-switcher">
+          <ul class="customer-switcher__list" data-uk-switcher="connect: .modal__main">
+            <li class="customer-switcher__item active">
+              <a class="customer-switcher__link" href="#">Вход</a>
             </li>
-            <li class="customer-nav__item">
-              <a class="customer-nav__link" href="#">Регистрация</a>
+            <li class="customer-switcher__item">
+              <a class="customer-switcher__link" href="#">Регистрация</a>
             </li>
           </ul>
         </div>

@@ -1,9 +1,10 @@
 .page-404 {
   display: flex;
+  align-items: center;
   justify-content: center;
   min-height: 100vh;
   box-sizing: border-box;
-  padding-top: 5%;
+  padding-top: 25px;
   background: url('../img/lace-gray.png') 0 0 repeat-x;
   @media (max-width: $breakpoint-small) {
     align-items: center;

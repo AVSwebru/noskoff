@@ -3,15 +3,16 @@
   @include reset-btn;
   display: inline-block;
   box-sizing: border-box;
+  padding: 12px;
   border-radius: 20px;
   text-align: center;
   color: #000;
   font-size: 15px;
   font-weight: 500;
+  line-height: 1;
   cursor: pointer;
   &_default {
     min-width: 190px;
-    padding: 10px;
     background-color: #8bcadf;
     transition: background-color 0.25s;
     &:hover {
@@ -45,7 +46,6 @@
     }
   }
   &_control {
-    padding: 10px;
     border: 1px solid #6cbcd8;
     background-color: transparent;
     color: #2a2a2a;
@@ -58,7 +58,6 @@
   }
   &_subscribe {
     min-width: 170px;
-    padding: 10px;
     background-color: #fff;
     color: #000;
     font-size: 17px;

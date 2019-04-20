@@ -1,19 +1,19 @@
-.customer-nav {
+.customer-switcher {
   box-shadow: inset 1px 2px 4px rgba(164, 146, 138, 0.35);
-  border-radius: 20px;
+  border-radius: 25px;
   border: 2px solid #faf7f6;
   background-color: #f2ebe8;
   background-image: linear-gradient(to top, rgba(248, 243, 241, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%);
 }
 
-.customer-nav__list {
+.customer-switcher__list {
   @include reset-list;
   display: flex;
   align-items: center;
 }
 
-.customer-nav__item {
-  &.active .customer-nav__link {
+.customer-switcher__item {
+  &.active .customer-switcher__link {
     padding: 15px 30px;
     box-shadow: 1px 1px 2px rgba(170, 163, 164, 0.35);
     border-radius: 20px;
@@ -25,7 +25,7 @@
   }
 }
 
-.customer-nav__link {
+.customer-switcher__link {
   @include reset-link;
   display: block;
   padding: 12px 18px;

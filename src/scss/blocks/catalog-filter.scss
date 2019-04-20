@@ -52,16 +52,15 @@
 }
 
 .catalog-filter__label {
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+
+.catalog-filter__label-text {
   color: #5d5c5c;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1;
-  &--price {
-    margin-right: 6px;
-    @media (max-width: $breakpoint-medium) {
-      margin-right: 4px;
-    }
-  }
 }
 
 .catalog-filter__price-input {

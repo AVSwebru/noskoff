@@ -61,12 +61,31 @@
 
 .card__info,
 .card__articul,
-.card__pickup,
 .card__delivery {
   color: #2b2b2b;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1;
+}
+
+.card__size {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card__brand {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.card__label-text {
+  margin-bottom: 10px;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card__delivery {
+  line-height: 1.5;
 }
 
 .card__select {
@@ -97,9 +116,9 @@
 
 .card__info-size {
   @include reset-btn;
-  margin-left: 10px;
+  margin-bottom: 30px;
   color: #5499af;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -107,7 +126,7 @@
 .card__info-store {
   @include reset-btn;
   color: #5499af;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -117,12 +136,7 @@
 }
 
 .card__pickup {
-  margin-left: 10px;
   margin-bottom: 11px;
-}
-
-.card__delivery {
-  margin-left: 10px;
 }
 
 .card__tab {

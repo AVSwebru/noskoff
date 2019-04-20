@@ -5,6 +5,8 @@
 .checkbox__label {
   position: relative;
   padding-left: 25px;
+  color: #5d5c5c;
+  font-size: 12px;
   &::before {
     content: '';
     position: absolute;

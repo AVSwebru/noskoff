@@ -1,11 +1,14 @@
-.modal__close {
+.modal__close-btn {
+  @include reset-btn;
   position: absolute;
   top: 20px;
   right: 20px;
-  svg {
-    width: 20px;
-    height: 20px;
-  }
+}
+
+.modal__close-icon {
+  width: 20px;
+  height: 20px;
+  fill: #666;
 }
 
 .modal__header {
@@ -49,6 +52,6 @@
 .modal__control-link {
   font-size: 15px;
   &:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
