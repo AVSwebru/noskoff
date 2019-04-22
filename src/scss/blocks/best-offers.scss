@@ -22,13 +22,17 @@
 }
 
 .best-offers__tab-item {
-  color: #8c8c8c;
+  color: #505050;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   @media (max-width: $breakpoint-small) {
     font-size: 16px;
   }
+}
+
+.best-offers__heading {
+  margin: 0;
 }
 
 .best-offers__grid {

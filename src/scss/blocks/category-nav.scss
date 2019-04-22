@@ -21,7 +21,7 @@
   font-weight: 500;
   line-height: 1;
   transition: background-color 0.25s;
-  &:hover {
+  &:hover, &:focus {
     color: #fff;
     background-color: #509bb4;
     transition: background-color 0.25s;

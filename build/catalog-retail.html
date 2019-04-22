@@ -11,191 +11,213 @@
 
 <body class="page">
   <div class="page__wrapper">
-      <header class="main-header">
-          <div class="main-header__top">
-            <div class="uk-container">
-              <div class="main-header__top-wrapper">
-                <nav class="customer-nav" aria-label="Навигация по типу продаж">
-                  <ul class="customer-nav__list">
-                    <li class="customer-nav__item active">
-                      <a class="customer-nav__link" href="#">Розница</a>
-                    </li>
-                    <li class="customer-nav__item">
-                      <a class="customer-nav__link" href="#">Оптовикам</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="main-header__rightside">
-                  <nav class="main-header__main-nav main-nav">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item">
-                        <a href="" class="main-nav__link">О нас</a>
-                      </li>
-                      <li class="main-nav__item">
-                        <a href="" class="main-nav__link">Новости</a>
-                      </li>
-                      <li class="main-nav__item">
-                        <a href="" class="main-nav__link">Доставка</a>
-                      </li>
-                      <li class="main-nav__item">
-                        <a href="" class="main-nav__link">Оплата</a>
-                      </li>
-                      <li class="main-nav__item">
-                        <a href="" class="main-nav__link">Контакты</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <ul class="main-header__social-bar social-bar">
-                    <li class="social-bar__item">
-                      <a href="#" class="social-bar__link">
-                        <svg class="social-bar__icon" width="16" height="16">
-                          <use xlink:href="../img/sprite.svg#in" />
-                        </svg>
-                        <span class="social-bar__link-decor"></span>
-                      </a>
-                    </li>
-                    <li class="social-bar__item">
-                      <a href="#" class="social-bar__link">
-                        <svg class="social-bar__icon" width="21" height="12">
-                          <use xlink:href="../img/sprite.svg#vk" />
-                        </svg>
-                        <span class="social-bar__link-decor"></span>
-                      </a>
-                    </li>
-                    <li class="social-bar__item">
-                      <a href="#" class="social-bar__link">
-                        <svg class="social-bar__icon" width="18" height="16">
-                          <use xlink:href="../img/sprite.svg#twitter" />
-                        </svg>
-                        <span class="social-bar__link-decor"></span>
-                      </a>
-                    </li>
-                  </ul>
+    <header class="main-header">
+      <div class="main-header__top">
+        <div class="uk-container">
+          <div class="main-header__top-wrapper js-header-top">
+            <nav class="main-header__customer-switcher customer-switcher" aria-label="Навигация по типу продаж">
+              <ul class="customer-switcher__list">
+                <li class="customer-switcher__item active">
+                  <a class="customer-switcher__link" href="#">Розница</a>
+                </li>
+                <li class="customer-switcher__item">
+                  <a class="customer-switcher__link" href="#">Оптовикам</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="main-header__rightside">
+              <nav class="main-header__main-nav main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">О нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Новости</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Доставка</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Оплата</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="main-header__social-bar social-bar">
+                <li class="social-bar__item">
+                  <a href="#" class="social-bar__link">
+                    <svg class="social-bar__icon" width="16" height="16">
+                      <use xlink:href="../img/sprite.svg#in" />
+                    </svg>
+                    <span class="social-bar__link-decor"></span>
+                  </a>
+                </li>
+                <li class="social-bar__item">
+                  <a href="#" class="social-bar__link">
+                    <svg class="social-bar__icon" width="21" height="12">
+                      <use xlink:href="../img/sprite.svg#vk" />
+                    </svg>
+                    <span class="social-bar__link-decor"></span>
+                  </a>
+                </li>
+                <li class="social-bar__item">
+                  <a href="#" class="social-bar__link">
+                    <svg class="social-bar__icon" width="18" height="16">
+                      <use xlink:href="../img/sprite.svg#twitter" />
+                    </svg>
+                    <span class="social-bar__link-decor"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__middle">
+        <div class="uk-container">
+          <div class="main-header__middle-wrapper">
+            <div class="main-header__middle-leftside">
+              <a class="js-main-header-logo" href="#" title="чулочно-носочные изделия 'Носкофф'">
+                <img class="main-header__logo" src="img/logo.jpg?3f6d5b7e18408cf7dc733b24e55dc974" alt="">
+              </a>
+            </div>
+            <div class="main-header__middle-rightside">
+              <div class="main-header__control-left">
+                <div class="main-header__contacts">
+                  <a class="main-header__tel" href="tel:+78001234567">
+                    8 800 123 45 67
+                  </a>
+                </div>
+                <form class="main-header__search-form search-form" aria-label="Форма поиска">
+                  <div class="search-form__wrapper">
+                    <input class="search-form__input uk-input" type="search" placeholder="Поиск" required>
+                    <button class="search-form__submit" type="submit" aria-label="Кнопка поиска">
+                      <svg class="search-form__icon">
+                        <use xlink:href="../img/sprite.svg#search" />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="main-header__control-right">
+                <button class="main-header__login-btn" type="button" data-uk-toggle="target: #user">
+                  <svg class="main-header__login-btn-icon" width="18" height="24">
+                    <use xlink:href="../img/sprite.svg#user" />
+                  </svg>
+                  Войти
+                </button>
+                <div class="main-header__buttons">
                   <button class="menu-btn js-menu-btn"
                     data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open" type="button"
                     aria-label="Кнопка переключения меню">
-                    <span class="menu-btn__line menu-btn__line_first"></span>
-                    <span class="menu-btn__line menu-btn__line_second"></span>
-                    <span class="menu-btn__line menu-btn__line_third"></span>
+                    <svg class="menu-btn__opened-icon">
+                      <use xlink:href="../img/sprite.svg#menu" />
+                    </svg>
                   </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-header__middle">
-            <div class="uk-container">
-              <div class="main-header__middle-wrapper">
-                <div class="main-header__middle-leftside">
-                  <a class="main-header__sitetitle" href="#" title="чулочно-носочные изделия 'Носкофф'">
-                    <img class="main-header__logo" src="img/logo.jpg?3f6d5b7e18408cf7dc733b24e55dc974" alt="">
-                    
+                  <button class="main-header__search-btn search-btn" data-uk-toggle="target: .js-search-adapt"
+                    aria-label="Кнопка переключения поиска">
+                    <svg class="search-btn__icon">
+                      <use xlink:href="../img/sprite.svg#search" />
+                    </svg>
+                  </button>
+                  <a class="main-header__control-item" href="#" aria-label="Отложенные товары">
+                    <svg class="main-header__control-icon-wishes">
+                      <use xlink:href="../img/sprite.svg#heart" />
+                    </svg>
+                    <span class="main-header__control-item-badge uk-badge">2</span>
+                  </a>
+                  <a class="main-header__control-item" href="#" aria-label="Корзина">
+                    <svg class="main-header__control-icon-cart">
+                      <use xlink:href="../img/sprite.svg#cart" />
+                    </svg>
+                    <span class="main-header__control-item-badge uk-badge">8</span>
                   </a>
                 </div>
-                <div class="main-header__middle-rightside">
-                  <form class="main-header__search-form search-form" aria-label="Форма поиска">
-                    <div class="search-form__wrapper">
-                      <input class="search-form__input uk-search" type="text" placeholder="Поиск">
-                      <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
-                    </div>
-                  </form>
-                  <div class="main-header__contacts">
-                    <a class="main-header__tel" href="tel:+78001234567">
-                      8 800 123 45 67
-                    </a>
-                  </div>
-                  <div class="main-header__control">
-                    <button class="main-header__login-btn" type="button" data-uk-toggle="target: #user">Вход /
-                      регистрация</button>
-                    <div class="main-header__control-bar">
-                      <a class="main-header__control-item" href="#" aria-label="Отложенные товары">
-                        <svg class="main-header__control-item-icon" width="18" height="18">
-                          <use xlink:href="../img/sprite.svg#heart" />
-                        </svg>
-                        <span class="main-header__control-item-badge uk-badge">2</span>
-                      </a>
-                      <a class="main-header__control-item" href="#" aria-label="Корзина">
-                        <svg class="main-header__control-item-icon" width="25" height="22">
-                          <use xlink:href="../img/sprite.svg#cart" />
-                        </svg>
-                        <span class="main-header__control-item-badge uk-badge">8</span>
-                      </a>
-                    </div>
-                  </div>
-                  <button class="main-header__search-btn search-btn" data-uk-icon="icon: search"
-                    data-uk-toggle="target: .js-search-adapt" aria-label="Кнопка переключения поиска"></button>
-                </div>
               </div>
             </div>
           </div>
-          <div class="main-header__bottom">
-            <div class="uk-container">
-              <nav class="main-header__category-nav category-nav" aria-label="Навигация по каталогам">
-                <ul class="category-nav__list">
-                  <li class="category-nav__item"><a href="#" class="category-nav__link">Женщинам</a></li>
-                  <li class="category-nav__item"><a href="#" class="category-nav__link">Мужчинам</a></li>
-                  <li class="category-nav__item"><a href="#" class="category-nav__link">Девочкам</a></li>
-                  <li class="category-nav__item"><a href="#" class="category-nav__link">Мальчикам</a></li>
-                  <li class="category-nav__item"><a href="#" class="category-nav__link">Распродажа</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <nav class="menu-nav-adapt js-menu-nav-adapt uk-animation-slide-top" aria-label="Основная навигация">
-            <button class="menu-btn menu-btn_close js-menu-btn"
-              data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open;" type="button"
-              aria-label="Кнопка переключения меню">
-              <span class="menu-btn__line menu-btn__line_first"></span>
-              <span class="menu-btn__line menu-btn__line_second"></span>
-              <span class="menu-btn__line menu-btn__line_third"></span>
-            </button>
-            <ul class="menu-nav-adapt__list">
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Женщинам</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Мужчинам</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Девочкам</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Мальчикам</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Распродажа</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">О нас</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Новости</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Доставка</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Оплата</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Контакты</a>
-              </li>
-              <li class="menu-nav-adapt__item">
-                <a class="menu-nav-adapt__link" href="#">Вход/регистрация</a>
-              </li>
+        </div>
+      </div>
+      <div class="main-header__bottom">
+        <div class="uk-container">
+          <nav class="main-header__category-nav category-nav" aria-label="Навигация по каталогам">
+            <ul class="category-nav__list">
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Женщинам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Мужчинам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Девочкам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Мальчикам</a></li>
+              <li class="category-nav__item"><a href="#" class="category-nav__link">Успей купить <span
+                    class="percent">%</span></a></li>
             </ul>
           </nav>
-          <div class="search-adapt js-search-adapt" hidden>
-            <form class="search-adapt__search-form search-form search-form_adapt" aria-label="Форма поиска">
-              <button class="search-adapt__close-btn uk-close uk-close-large uk-position-top-right" data-uk-close
-                data-uk-toggle="target: .js-search-adapt" aria-label="Закрыть поиск"></button>
-              <div class="search-form__wrapper">
-                <input class="search-form__input uk-search" type="text" placeholder="Поиск" autofocus>
-                <span class="search-form__icon uk-form-icon" uk-icon="icon: search"></span>
-              </div>
-            </form>
-            <div class="uk-overlay-primary uk-position-cover" data-uk-toggle="target: .js-search-adapt"></div>
+        </div>
+      </div>
+      <nav class="menu-nav-adapt js-menu-nav-adapt uk-animation-slide-top" aria-label="Основная навигация">
+        <button class="menu-btn menu-btn_close js-menu-btn"
+          data-uk-toggle="target: .js-menu-btn, .js-menu-nav-adapt; cls: is-open;" type="button"
+          aria-label="Кнопка переключения меню">
+          <svg class="menu-btn__closed-icon">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
+        <ul class="menu-nav-adapt__list">
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Женщинам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Мужчинам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Девочкам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Мальчикам</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Распродажа</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">О нас</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Новости</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Доставка</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Оплата</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Контакты</a>
+          </li>
+          <li class="menu-nav-adapt__item">
+            <a class="menu-nav-adapt__link" href="#">Вход/регистрация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-adapt js-search-adapt" hidden>
+        <form class="search-adapt__search-form search-form search-form_adapt" aria-label="Форма поиска">
+          <button class="search-adapt__close-btn uk-close" data-uk-toggle="target: .js-search-adapt"
+            aria-label="Закрыть поиск">
+            <svg class="search-adapt__close-icon">
+              <use xlink:href="../img/sprite.svg#close" />
+            </svg>
+          </button>
+          <div class="search-form__wrapper">
+            <input class="search-form__input uk-input" type="search" placeholder="Поиск" required autofocus>
+            <button class="search-form__submit" type="submit" aria-label="Кнопка поиска">
+              <svg class="search-form__icon">
+                <use xlink:href="../img/sprite.svg#search" />
+              </svg>
+            </button>
           </div>
-        </header>
+        </form>
+        <div class="uk-overlay-primary uk-position-cover" data-uk-toggle="target: .js-search-adapt"></div>
+      </div>
+    </header>
     <main class="inner-page">
       <div class="uk-container">
         <ul class="breadcrumb uk-breadcrumb">
@@ -204,436 +226,471 @@
           <li><span>Женские костюмы и колготки</span></li>
         </ul>
         <div class="catalog-grid">
-        <div>
-          <button class="filter-btn" data-uk-toggle="target: .js-catalog-filter">
-            <svg class="filter-btn__icon">
-              <use xlink:href="../img/sprite.svg#filter"/>
-            </svg>
-            Фильтры
-          </button>
-          <form class="catalog-filter js-catalog-filter">
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Женщинам</legend>
-              <ul class="catalog-filter__list catalog-filter__type-list">
-                <li class="active"><a href="#">Колготки и чулки</a></li>
-                <li><a href="#">Леггинсы</a></li>
-                <li><a href="#">Носки</a></li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Цена, <span class="rubl">a</span></legend>
-              <div class="catalog-filter__price-row">
-                <span class="catalog-filter__label catalog-filter__label--price">от</span>
-                <input class="catalog-filter__price-input catalog-filter__price-input--from js-catalog-filter-min" name="catalog-filter-price-from" type="text" value="0">
-                <span class="catalog-filter__label catalog-filter__label--price">до</span>
-                <input class="catalog-filter__price-input js-catalog-filter-max" id="input-number" name="catalog-filter-price-to" type="text" value="9000">
-              </div>
-              <div id="slider"></div>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Размер</legend>
-              <div class="catalog-filter__size-layout">
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-30" value="30">
-                    <label class="checkbox__label" for="catalog-filter-size-30">30</label>
-                  </div>
+          <div>
+            <button class="filter-btn" data-uk-toggle="target: .js-catalog-filter">
+              <svg class="filter-btn__icon">
+                <use xlink:href="../img/sprite.svg#filter" />
+              </svg>
+              Фильтры
+            </button>
+            <form class="catalog-filter js-catalog-filter">
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Женщинам</legend>
+                <ul class="catalog-filter__list catalog-filter__type-list">
+                  <li class="active"><a href="#">Колготки и чулки</a></li>
+                  <li><a href="#">Леггинсы</a></li>
+                  <li><a href="#">Носки</a></li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Цена, <span class="rubl">a</span></legend>
+                <div class="catalog-filter__price-row">
+                  <span class="catalog-filter__label catalog-filter__label--price">от</span>
+                  <input class="catalog-filter__price-input catalog-filter__price-input--from js-catalog-filter-min"
+                    name="catalog-filter-price-from" type="text" value="0">
+                  <span class="catalog-filter__label catalog-filter__label--price">до</span>
+                  <input class="catalog-filter__price-input js-catalog-filter-max" id="input-number"
+                    name="catalog-filter-price-to" type="text" value="9000">
                 </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-31" value="31">
-                    <label class="checkbox__label" for="catalog-filter-size-31">31</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-32" value="32">
-                    <label class="checkbox__label" for="catalog-filter-size-32">32</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-33" value="33">
-                    <label class="checkbox__label" for="catalog-filter-size-33">33</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-34" value="34">
-                    <label class="checkbox__label" for="catalog-filter-size-34">34</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-35" value="35">
-                    <label class="checkbox__label" for="catalog-filter-size-35">35</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-36" value="36">
-                    <label class="checkbox__label" for="catalog-filter-size-36">36</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-37" value="37">
-                    <label class="checkbox__label" for="catalog-filter-size-37">37</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-38" value="38">
-                    <label class="checkbox__label" for="catalog-filter-size-38">38</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-39" value="39">
-                    <label class="checkbox__label" for="catalog-filter-size-39">39</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-size" id="catalog-filter-size-40" value="40">
-                    <label class="checkbox__label" for="catalog-filter-size-40">40</label>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Состав</legend>
-              <ul class="catalog-filter__list">
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-1" value="Хлопок">
-                    <label class="checkbox__label" for="catalog-filter-consist-1">Хлопок</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-2" value="Шерсть">
-                    <label class="checkbox__label" for="catalog-filter-consist-2">Шерсть</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-consist" id="catalog-filter-consist-3" value="Полиэстер">
-                    <label class="checkbox__label" for="catalog-filter-consist-3">Полиэстер</label>
-                  </div>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Бренд</legend>
-              <ul class="catalog-filter__list js-brands-list">
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-1" value="Полиэстер">
-                    <label class="checkbox__label" for="catalog-filter-brand-1">A.Karina</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-2" value="ABSOLUTEX">
-                    <label class="checkbox__label" for="catalog-filter-brand-2">ABSOLUTEX</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-3" value="ALLBrands">
-                    <label class="checkbox__label" for="catalog-filter-brand-3">ALLBrands</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-4" value="Полиэстер">
-                    <label class="checkbox__label" for="catalog-filter-brand-4">A.Karina</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-5" value="ABSOLUTEX">
-                    <label class="checkbox__label" for="catalog-filter-brand-5">ABSOLUTEX</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="checkbox catalog-filter__label">
-                    <input class="checkbox__input" type="checkbox" name="catalog-filter-brand" id="catalog-filter-brand-6" value="ALLBrands">
-                    <label class="checkbox__label" for="catalog-filter-brand-6">ALLBrands</label>
-                  </div>
-                </li>
-              </ul>
-              <button class="catalog-filter__view-all-brands js-view-all-brands" type="button">Показать все</button>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Цвет</legend>
-              <div class="catalog-filter__color-layout">
-                <div>
-                  <div class="color-checkbox color-checkbox--black">
-                    <input class="color-checkbox__input" id="catalog-filter-color-black" type="checkbox" name="catalog-filter-color" value="black">
-                    <label class="color-checkbox__label" for="catalog-filter-color-black">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--white">
-                    <input class="color-checkbox__input" id="catalog-filter-color-white" type="checkbox" name="catalog-filter-color" value="white">
-                    <label class="color-checkbox__label" for="catalog-filter-color-white">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--cream">
-                    <input class="color-checkbox__input" id="catalog-filter-color-cream" type="checkbox" name="catalog-filter-color" value="cream">
-                    <label class="color-checkbox__label" for="catalog-filter-color-cream">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--gray">
-                    <input class="color-checkbox__input" id="catalog-filter-color-gray" type="checkbox" name="catalog-filter-color" value="gray">
-                    <label class="color-checkbox__label" for="catalog-filter-color-gray">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--red">
-                    <input class="color-checkbox__input" id="catalog-filter-color-red" type="checkbox" name="catalog-filter-color" value="red">
-                    <label class="color-checkbox__label" for="catalog-filter-color-red">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--blue">
-                    <input class="color-checkbox__input" id="catalog-filter-color-blue" type="checkbox" name="catalog-filter-color" value="blue">
-                    <label class="color-checkbox__label" for="catalog-filter-color-blue">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--green">
-                    <input class="color-checkbox__input" id="catalog-filter-color-green" type="checkbox" name="catalog-filter-color" value="green">
-                    <label class="color-checkbox__label" for="catalog-filter-color-green">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--pink">
-                    <input class="color-checkbox__input" id="catalog-filter-color-pink" type="checkbox" name="catalog-filter-color" value="pink">
-                    <label class="color-checkbox__label" for="catalog-filter-color-pink">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--purple">
-                    <input class="color-checkbox__input" id="catalog-filter-color-purple" type="checkbox" name="catalog-filter-color" value="purple">
-                    <label class="color-checkbox__label" for="catalog-filter-color-purple">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--azure">
-                    <input class="color-checkbox__input" id="catalog-filter-color-azure" type="checkbox" name="catalog-filter-color" value="azure">
-                    <label class="color-checkbox__label" for="catalog-filter-color-azure">
-                  </div>
-                </div>
-                <div>
-                  <div class="color-checkbox color-checkbox--orange">
-                    <input class="color-checkbox__input" id="catalog-filter-color-orange" type="checkbox" name="catalog-filter-color" value="orange">
-                    <label class="color-checkbox__label" for="catalog-filter-color-orange">
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="catalog-filter__part">
-              <legend class="catalog-filter__part-title">Распродажа</legend>
-              <div class="checkbox catalog-filter__label">
-                <input class="checkbox__input" type="checkbox" name="catalog-filter-discount" id="catalog-filter-discount" value="discount">
-                <label class="checkbox__label" for="catalog-filter-discount">Только товары со скидкой</label>
-              </div>
-            </fieldset>
-            <input class="catalog-filter__submit-btn btn btn_default btn_default_light" type="submit" value="Применить">
-            <button class="btn btn_control" type="button">Сбросить фильтр</button>
-          </form>
-        </div>
-        <div>
-          <h1 class="page-title">Женские колготки и чулки</h1>
-          <div class="catalog-retail-pool">
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
-                    </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="product-item__price-row">
-                    <div class="product-item__old-price">
-                      195 <span class="rubl">c</span>
+                <div id="slider"></div>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Размер</legend>
+                <div class="catalog-filter__size-layout">
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-30" value="30">
+                      <label class="checkbox__label" for="catalog-filter-size-30">30</label>
                     </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-31" value="31">
+                      <label class="checkbox__label" for="catalog-filter-size-31">31</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-32" value="32">
+                      <label class="checkbox__label" for="catalog-filter-size-32">32</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-33" value="33">
+                      <label class="checkbox__label" for="catalog-filter-size-33">33</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-34" value="34">
+                      <label class="checkbox__label" for="catalog-filter-size-34">34</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-35" value="35">
+                      <label class="checkbox__label" for="catalog-filter-size-35">35</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-36" value="36">
+                      <label class="checkbox__label" for="catalog-filter-size-36">36</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-37" value="37">
+                      <label class="checkbox__label" for="catalog-filter-size-37">37</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-38" value="38">
+                      <label class="checkbox__label" for="catalog-filter-size-38">38</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-39" value="39">
+                      <label class="checkbox__label" for="catalog-filter-size-39">39</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-size"
+                        id="catalog-filter-size-40" value="40">
+                      <label class="checkbox__label" for="catalog-filter-size-40">40</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Состав</legend>
+                <ul class="catalog-filter__list">
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-consist"
+                        id="catalog-filter-consist-1" value="Хлопок">
+                      <label class="checkbox__label" for="catalog-filter-consist-1">Хлопок</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-consist"
+                        id="catalog-filter-consist-2" value="Шерсть">
+                      <label class="checkbox__label" for="catalog-filter-consist-2">Шерсть</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-consist"
+                        id="catalog-filter-consist-3" value="Полиэстер">
+                      <label class="checkbox__label" for="catalog-filter-consist-3">Полиэстер</label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Бренд</legend>
+                <ul class="catalog-filter__list js-brands-list">
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-1" value="Полиэстер">
+                      <label class="checkbox__label" for="catalog-filter-brand-1">A.Karina</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-2" value="ABSOLUTEX">
+                      <label class="checkbox__label" for="catalog-filter-brand-2">ABSOLUTEX</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-3" value="ALLBrands">
+                      <label class="checkbox__label" for="catalog-filter-brand-3">ALLBrands</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-4" value="Полиэстер">
+                      <label class="checkbox__label" for="catalog-filter-brand-4">A.Karina</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-5" value="ABSOLUTEX">
+                      <label class="checkbox__label" for="catalog-filter-brand-5">ABSOLUTEX</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox catalog-filter__label">
+                      <input class="checkbox__input" type="checkbox" name="catalog-filter-brand"
+                        id="catalog-filter-brand-6" value="ALLBrands">
+                      <label class="checkbox__label" for="catalog-filter-brand-6">ALLBrands</label>
+                    </div>
+                  </li>
+                </ul>
+                <button class="catalog-filter__view-all-brands js-view-all-brands" type="button">Показать все</button>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Цвет</legend>
+                <div class="catalog-filter__color-layout">
+                  <div>
+                    <div class="color-checkbox color-checkbox--black">
+                      <input class="color-checkbox__input" id="catalog-filter-color-black" type="checkbox"
+                        name="catalog-filter-color" value="black">
+                      <label class="color-checkbox__label" for="catalog-filter-color-black">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--white">
+                      <input class="color-checkbox__input" id="catalog-filter-color-white" type="checkbox"
+                        name="catalog-filter-color" value="white">
+                      <label class="color-checkbox__label" for="catalog-filter-color-white">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--cream">
+                      <input class="color-checkbox__input" id="catalog-filter-color-cream" type="checkbox"
+                        name="catalog-filter-color" value="cream">
+                      <label class="color-checkbox__label" for="catalog-filter-color-cream">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--gray">
+                      <input class="color-checkbox__input" id="catalog-filter-color-gray" type="checkbox"
+                        name="catalog-filter-color" value="gray">
+                      <label class="color-checkbox__label" for="catalog-filter-color-gray">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--red">
+                      <input class="color-checkbox__input" id="catalog-filter-color-red" type="checkbox"
+                        name="catalog-filter-color" value="red">
+                      <label class="color-checkbox__label" for="catalog-filter-color-red">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--blue">
+                      <input class="color-checkbox__input" id="catalog-filter-color-blue" type="checkbox"
+                        name="catalog-filter-color" value="blue">
+                      <label class="color-checkbox__label" for="catalog-filter-color-blue">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--green">
+                      <input class="color-checkbox__input" id="catalog-filter-color-green" type="checkbox"
+                        name="catalog-filter-color" value="green">
+                      <label class="color-checkbox__label" for="catalog-filter-color-green">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--pink">
+                      <input class="color-checkbox__input" id="catalog-filter-color-pink" type="checkbox"
+                        name="catalog-filter-color" value="pink">
+                      <label class="color-checkbox__label" for="catalog-filter-color-pink">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--purple">
+                      <input class="color-checkbox__input" id="catalog-filter-color-purple" type="checkbox"
+                        name="catalog-filter-color" value="purple">
+                      <label class="color-checkbox__label" for="catalog-filter-color-purple">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--azure">
+                      <input class="color-checkbox__input" id="catalog-filter-color-azure" type="checkbox"
+                        name="catalog-filter-color" value="azure">
+                      <label class="color-checkbox__label" for="catalog-filter-color-azure">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="color-checkbox color-checkbox--orange">
+                      <input class="color-checkbox__input" id="catalog-filter-color-orange" type="checkbox"
+                        name="catalog-filter-color" value="orange">
+                      <label class="color-checkbox__label" for="catalog-filter-color-orange">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter__part">
+                <legend class="catalog-filter__part-title">Распродажа</legend>
+                <div class="checkbox catalog-filter__label">
+                  <input class="checkbox__input" type="checkbox" name="catalog-filter-discount"
+                    id="catalog-filter-discount" value="discount">
+                  <label class="checkbox__label" for="catalog-filter-discount">Только товары со скидкой</label>
+                </div>
+              </fieldset>
+              <input class="catalog-filter__submit-btn btn btn_default btn_default_light" type="submit"
+                value="Применить">
+              <button class="btn btn_control" type="button">Сбросить фильтр</button>
+            </form>
+          </div>
+          <div>
+            <h1 class="page-title">Женские колготки и чулки</h1>
+            <div class="catalog-retail-pool">
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
+                    <div class="product-item__price-row">
+                      <div class="product-item__old-price">
+                        195 <span class="rubl">c</span>
+                      </div>
+                      <div class="price">
+                        160 <span class="rubl">c</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__discount-marker">
+                    -25%
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
+                    </a>
                     <div class="price">
                       160 <span class="rubl">c</span>
                     </div>
                   </div>
                 </div>
-                <div class="product-item__discount-marker">
-                  -25%
-                </div>
               </div>
-            </div>
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
                     </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="price">
-                    160 <span class="rubl">c</span>
+                    <div class="price">
+                      160 <span class="rubl">c</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
                     </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="price">
-                    160 <span class="rubl">c</span>
+                    <div class="price">
+                      160 <span class="rubl">c</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
                     </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="price">
-                    160 <span class="rubl">c</span>
+                    <div class="price">
+                      160 <span class="rubl">c</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
+              <div>
+                <div class="product-item">
+                  <div class="product-item__img-wrapper uk-cover-container">
+                    <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
+                    <div class="product-item__more">
+                      <a class="product-item__more-link" href="#">
+                        Подробнее
+                      </a>
+                      <button class="product-item__like" type="button">
+                        <svg class="product-item__like-icon">
+                          <use xlink:href="img/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-item__desc">
+                    <a class="product-item__link" href="#">
+                      <h3 class="product-item__title">
+                        Носки мужские DiWaRi Classic 5С-08С
+                      </h3>
                     </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="price">
-                    160 <span class="rubl">c</span>
+                    <div class="price">
+                      160 <span class="rubl">c</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="product-item">
-                <div class="product-item__img-wrapper uk-cover-container">
-                  <img data-uk-cover src="img/product-1.jpg?f3ef1ad91a408baf57eeba3941a9b8a1" alt="">
-                  <div class="product-item__more">
-                    <a class="product-item__more-link" href="#">
-                      Подробнее
-                    </a>
-                    <button class="product-item__like" type="button">
-                      <svg class="product-item__like-icon">
-                        <use xlink:href="img/sprite.svg#heart"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-item__desc">
-                  <a class="product-item__link" href="#">
-                    <h3 class="product-item__title">
-                      Носки мужские DiWaRi Classic 5С-08С
-                    </h3>
-                  </a>
-                  <div class="price">
-                    160 <span class="rubl">c</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <ul class="pagination uk-pagination">
-            <li><a class="pagination__prev" href="#"><span data-uk-icon="icon: arrow-left"></span> Назад</a></li>
-            <li class="uk-active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="uk-disabled"><span>...</span></li>
-            <li><a href="#">12</a></li>
-            <li><a class="pagination__next" href="#">Вперёд <span data-uk-icon="icon: arrow-right"></span></a></li>
-          </ul>
+            <ul class="pagination uk-pagination">
+              <li><a class="pagination__prev" href="#"><span data-uk-icon="icon: arrow-left"></span> Назад</a></li>
+              <li class="uk-active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li class="uk-disabled"><span>...</span></li>
+              <li><a href="#">12</a></li>
+              <li><a class="pagination__next" href="#">Вперёд <span data-uk-icon="icon: arrow-right"></span></a></li>
+            </ul>
 
+          </div>
         </div>
-      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__top">
@@ -690,28 +747,28 @@
             </nav>
             <a class="main-footer__tel" href="tel:+78001234567">8 800 123 45 67</a>
             <ul class="main-footer__footer-social-bar footer-social-bar">
-                <li class="footer-social-bar__item">
-                  <a class="footer-social-bar__link" href="#">
-                    <svg class="footer-social-bar__icon" width="16" height="16">
-                      <use xlink:href="../img/sprite.svg#in"/>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-bar__item">
-                  <a class="footer-social-bar__link" href="#">
-                    <svg class="footer-social-bar__icon" width="21" height="12">
-                      <use xlink:href="../img/sprite.svg#vk"/>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-bar__item">
-                  <a class="footer-social-bar__link" href="#">
-                    <svg class="footer-social-bar__icon" width="18" height="16">
-                      <use xlink:href="../img/sprite.svg#twitter"/>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <li class="footer-social-bar__item">
+                <a class="footer-social-bar__link" href="#">
+                  <svg class="footer-social-bar__icon" width="16" height="16">
+                    <use xlink:href="../img/sprite.svg#in" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-bar__item">
+                <a class="footer-social-bar__link" href="#">
+                  <svg class="footer-social-bar__icon" width="21" height="12">
+                    <use xlink:href="../img/sprite.svg#vk" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-bar__item">
+                <a class="footer-social-bar__link" href="#">
+                  <svg class="footer-social-bar__icon" width="18" height="16">
+                    <use xlink:href="../img/sprite.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -727,14 +784,14 @@
                 <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
                   C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
                   l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
-                  C102.1,120.4,103.2,124.4,101.5,127.5z"/>
+                  C102.1,120.4,103.2,124.4,101.5,127.5z" />
                 <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
                   C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
-                  c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z"/>
+                  c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z" />
                 <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
                   s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
-                  c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z"/>
-                <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z"/>
+                  c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z" />
+                <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z" />
                 <text style="font-family: 'Open Sans', sans-serif;
                 font-size: 110px; fill: #6e6364;" x="400" y="130">Сделано в</text>
                 <text style="font-family: 'Open Sans', sans-serif;

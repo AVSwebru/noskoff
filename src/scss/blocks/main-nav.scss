@@ -12,6 +12,9 @@
   margin: 0 17px;
   &.active .main-nav__link {
     color: #458fa7;
+    &::before {
+      transform: translate(-50%, 0);
+    }
   }
   @media (max-width: $breakpoint-medium) {
     margin: 0 12px;

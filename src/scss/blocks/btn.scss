@@ -40,7 +40,7 @@
       min-width: 148px;
     }
     &:focus {
-      box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
+      box-shadow: 0 0 0 5px rgba(124, 181, 201, 0.35);
       outline: none;
       transition: box-shadow 0.25s;
     }
@@ -55,6 +55,11 @@
     &:hover {
       color: #2a2a2a;
     }
+    &:focus {
+      box-shadow: 0 0 0 5px rgba(124, 181, 201, 0.35);
+      outline: none;
+      transition: box-shadow 0.25s;
+    }
   }
   &_subscribe {
     min-width: 170px;
@@ -62,7 +67,7 @@
     color: #000;
     font-size: 17px;
     transition: background-color 0.25s;
-    &:hover {
+    &:hover, &:focus {
       background-color: #ebe0dc;
       transition: background-color 0.25s;
     }

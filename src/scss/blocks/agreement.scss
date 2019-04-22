@@ -10,10 +10,12 @@
 
 .agreement__input {
   @include visually-hidden;
-}
-
-.agreement__input:checked + .agreement__label-text::after {
-  display: block;
+  &:checked + .agreement__label-text::after {
+    display: block;
+  }
+  &:focus + .agreement__label-text::before {
+    box-shadow: 0 0 1px 1px #6cbcd8;
+  }
 }
 
 .agreement__label-text {

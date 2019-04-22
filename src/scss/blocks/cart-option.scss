@@ -1,5 +1,11 @@
 .cart-option__input {
   @include visually-hidden;
+  &:focus + .cart-option__label {
+    box-shadow: 0 0 10px rgba(124, 181, 201, 0.35);
+    border: 1px solid #7cb5c9;
+    outline: none;
+    transition: box-shadow 0.25s;
+  }
 }
 
 .cart-option__label {

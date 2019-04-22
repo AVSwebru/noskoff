@@ -48,18 +48,3 @@
     padding-top: 34px;
   }
 }
-
-.cart-total__submit-btn {
-  @include reset-btn;
-  min-width: 190px;
-  box-sizing: border-box;
-  padding: 12px;
-  border-radius: 20px;
-  background-color: #6cbcd8;
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  cursor: pointer;
-}
