@@ -2,9 +2,9 @@
 @import "variables";
 
 $global-font-family: $font-base;
-$base-color: #2d2d2d;
-$base-link-color: #6cbcd8;
-$base-link-hover-color: #6cbcd8;
+$base-body-color: #333;
+$base-link-color: #3f8ba4;
+$base-link-hover-color: #3f8ba4;
 
 $container-max-width: 1140px;
 $global-medium-gutter: 15px;
@@ -24,17 +24,13 @@ $modal-dialog-width: 748px;
 $modal-body-padding-horizontal: 0;
 $modal-body-padding-vertical: 0;
 
+$dotnav-item-width: 20px;
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-@mixin hook-slidenav-misc() {
-  .uk-dotnav > * > a {
-    width: 18px;
-    height: 18px;
-  }
-}
 
 @mixin hook-tab-item() {
   border: none;
@@ -168,7 +164,7 @@ $modal-body-padding-vertical: 0;
 @import "uikit/src/scss/components/svg.scss";
 @import "uikit/src/scss/components/utility.scss";
 // @import "uikit/src/scss/components/flex.scss"; // After: Utility
-// @import "uikit/src/scss/components/margin.scss";
+@import "uikit/src/scss/components/margin.scss";
 // @import "uikit/src/scss/components/padding.scss";
 @import "uikit/src/scss/components/position.scss";
 @import "uikit/src/scss/components/transition.scss";
