@@ -42,5 +42,13 @@
   },
   "devDependencies": {
     "eslint": "^5.0.1"
+  },
+  "prettier": {
+    "editor.formatOnSave": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "always"
   }
 }
