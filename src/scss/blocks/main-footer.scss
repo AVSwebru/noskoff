@@ -17,6 +17,8 @@
 
 .main-footer__tel {
   @include reset-link;
+  display: block;
+  margin-bottom: 15px;
   color: #707070;
   font-size: 18px;
   font-weight: 500;
@@ -24,14 +26,21 @@
   &:hover {
     color: #707070;
   }
+}
+
+.main-footer__callback-btn {
+  @include reset-btn;
+  color: #458fa7;
+  font-size: 16px;
+  font-weight: 500;
   @media (max-width: $breakpoint-small) {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 }
 
 .main-footer__bottom {
   padding: 40px 0 16px;
-  background: #ebe0dc url("../img/lace-white.png") 0 0 repeat-x;
+  background: #ebe0dc url('../img/lace-white.png') 0 0 repeat-x;
 }
 
 .main-footer__bottom-wrapper {
