@@ -3,47 +3,47 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  &--black {
+  &_black {
     border: 1px solid #181818;
     background-color: #181818;
   }
-  &--white {
+  &_white {
     border: 1px solid #dddddd;
     background-color: #fff;
   }
-  &--cream {
+  &_cream {
     border: 1px solid #eadac0;
     background-color: #eadac0;
   }
-  &--gray {
+  &_gray {
     border: 1px solid #bababa;
     background-color: #bababa;
   }
-  &--red {
+  &_red {
     border: 1px solid #f12e2e;
     background-color: #f12e2e;
   }
-  &--blue {
+  &_blue {
     border: 1px solid #3966e7;
     background-color: #3966e7;
   }
-  &--green {
+  &_green {
     border: 1px solid #57bc06;
     background-color: #57bc06;
   }
-  &--pink {
+  &_pink {
     border: 1px solid #f9a6cd;
     background-color: #f9a6cd;
   }
-  &--purple {
+  &_purple {
     border: 1px solid#bc58f0;
     background-color: #bc58f0;
   }
-  &--azure {
+  &_azure {
     border: 1px solid #9cdffe;
     background-color: #9cdffe;
   }
-  &--orange {
+  &_orange {
     border: 1px solid #ffa60c;
     background-color: #ffa60c;
   }
