@@ -1,0 +1,23 @@
+@keyframes switching {
+  20% {
+    background-image: url('../img/preloader-2.jpg');
+  }
+  40% {
+    background-image: url('../img/preloader-3.jpg');
+  }
+  60% {
+    background-image: url('../img/preloader-4.jpg');
+  }
+  80% {
+    background-image: url('../img/preloader-5.jpg');
+  }
+  100% {
+    background-image: url('../img/preloader-1.jpg');
+  }
+}
+
+@keyframes slide-out {
+  100% {
+    transform: translateY(-100%);
+  }
+}

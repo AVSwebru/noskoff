@@ -3770,6 +3770,40 @@ iframe.uk-cover {
   .uk-hidden-notouch {
     display: block !important; } }
 
+@-webkit-keyframes switching {
+  20% {
+    background-image: url("../img/preloader-2.jpg"); }
+  40% {
+    background-image: url("../img/preloader-3.jpg"); }
+  60% {
+    background-image: url("../img/preloader-4.jpg"); }
+  80% {
+    background-image: url("../img/preloader-5.jpg"); }
+  100% {
+    background-image: url("../img/preloader-1.jpg"); } }
+
+@keyframes switching {
+  20% {
+    background-image: url("../img/preloader-2.jpg"); }
+  40% {
+    background-image: url("../img/preloader-3.jpg"); }
+  60% {
+    background-image: url("../img/preloader-4.jpg"); }
+  80% {
+    background-image: url("../img/preloader-5.jpg"); }
+  100% {
+    background-image: url("../img/preloader-1.jpg"); } }
+
+@-webkit-keyframes slide-out {
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
+
+@keyframes slide-out {
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
+
 @font-face {
   font-family: "ALSRubl";
   src: url("../fonts/ALSRubl.woff") format("woff");
@@ -7439,29 +7473,8 @@ a.pagination__next {
   height: 100%;
   background: #fff url("../img/preloader-1.jpg") 50% 50% no-repeat;
   background-size: 250px 250px;
-  -webkit-animation: switching 2s infinite;
-          animation: switching 2s infinite; }
-
-@-webkit-keyframes switching {
-  0% {
-    background-image: url("../img/preloader-1.jpg"); }
-  20% {
-    background-image: url("../img/preloader-2.jpg"); }
-  40% {
-    background-image: url("../img/preloader-3.jpg"); }
-  60% {
-    background-image: url("../img/preloader-4.jpg"); }
-  80% {
-    background-image: url("../img/preloader-5.jpg"); } }
-
-@keyframes switching {
-  0% {
-    background-image: url("../img/preloader-1.jpg"); }
-  20% {
-    background-image: url("../img/preloader-2.jpg"); }
-  40% {
-    background-image: url("../img/preloader-3.jpg"); }
-  60% {
-    background-image: url("../img/preloader-4.jpg"); }
-  80% {
-    background-image: url("../img/preloader-5.jpg"); } }
+  -webkit-animation: switching 3s infinite;
+          animation: switching 3s infinite; }
+  .preloader.slide-out {
+    -webkit-animation: slide-out 0.5s ease-out forwards;
+            animation: slide-out 0.5s ease-out forwards; }
