@@ -5195,6 +5195,8 @@ button {
 
 .main-footer__tel {
   text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
   color: #707070;
   font-size: 18px;
   font-weight: 500;
@@ -5203,9 +5205,17 @@ button {
     text-decoration: none; }
   .main-footer__tel:hover {
     color: #707070; }
+
+.main-footer__callback-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #458fa7;
+  font-size: 16px;
+  font-weight: 500; }
   @media (max-width: 640px) {
-    .main-footer__tel {
-      margin-bottom: 40px; } }
+    .main-footer__callback-btn {
+      margin-bottom: 15px; } }
 
 .main-footer__bottom {
   padding: 40px 0 16px;
@@ -6351,37 +6361,37 @@ a.pagination__next {
   width: 12px;
   height: 12px;
   border-radius: 50%; }
-  .color-block--black {
+  .color-block_black {
     border: 1px solid #181818;
     background-color: #181818; }
-  .color-block--white {
+  .color-block_white {
     border: 1px solid #dddddd;
     background-color: #fff; }
-  .color-block--cream {
+  .color-block_cream {
     border: 1px solid #eadac0;
     background-color: #eadac0; }
-  .color-block--gray {
+  .color-block_gray {
     border: 1px solid #bababa;
     background-color: #bababa; }
-  .color-block--red {
+  .color-block_red {
     border: 1px solid #f12e2e;
     background-color: #f12e2e; }
-  .color-block--blue {
+  .color-block_blue {
     border: 1px solid #3966e7;
     background-color: #3966e7; }
-  .color-block--green {
+  .color-block_green {
     border: 1px solid #57bc06;
     background-color: #57bc06; }
-  .color-block--pink {
+  .color-block_pink {
     border: 1px solid #f9a6cd;
     background-color: #f9a6cd; }
-  .color-block--purple {
+  .color-block_purple {
     border: 1px solid #bc58f0;
     background-color: #bc58f0; }
-  .color-block--azure {
+  .color-block_azure {
     border: 1px solid #9cdffe;
     background-color: #9cdffe; }
-  .color-block--orange {
+  .color-block_orange {
     border: 1px solid #ffa60c;
     background-color: #ffa60c; }
 
