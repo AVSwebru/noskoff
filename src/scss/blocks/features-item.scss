@@ -1,0 +1,19 @@
+.features-item {
+  padding-left: 55px;
+  background: no-repeat 0 0 / 40px auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  &_1 {
+    background-image: url('../img/delivery.svg');
+  }
+  &_2 {
+    background-image: url('../img/security.svg');
+  }
+  &_3 {
+    background-image: url('../img/connection.svg');
+  }
+  &_4 {
+    background-image: url('../img/quality.svg');
+  }
+}

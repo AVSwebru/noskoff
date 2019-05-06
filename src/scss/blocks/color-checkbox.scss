@@ -1,76 +1,335 @@
 .color-checkbox {
+  &_coffee {
+    .color-checkbox__label::before {
+      border: 1px solid #642c1f;
+      background-color: #642c1f;
+    }
+  }
+  &_caffee {
+    .color-checkbox__label::before {
+      border: 1px solid #350e00;
+      background-color: #350e00;
+    }
+  }
+  &_lana {
+    .color-checkbox__label::before {
+      border: 1px solid #f4ead4;
+      background-color: #f4ead4;
+    }
+  }
+  &_nero {
+    .color-checkbox__label::before {
+      border: 1px solid #000000;
+      background-color: #000000;
+    }
+  }
   &_black {
-    .color-checkbox__label {
-      background-color: #181818;
+    .color-checkbox__label::before {
+      border: 1px solid #000000;
+      background-color: #000000;
     }
   }
-  &_white {
-    .color-checkbox__label {
-      border: 1px solid #dddddd;
-      background-color: #fff;
+  &_bianco {
+    .color-checkbox__label::before {
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
     }
   }
-  &_cream {
-    .color-checkbox__label {
-      background-color: #eadac0;
+  &_midnightblue {
+    .color-checkbox__label::before {
+      border: 1px solid #19196f;
+      background-color: #19196f;
     }
   }
-  &_gray {
-    .color-checkbox__label {
-      background-color: #bababa;
+  &_carbone {
+    .color-checkbox__label::before {
+      border: 1px solid #2d3a40;
+      background-color: #2d3a40;
     }
   }
-  &_red {
-    .color-checkbox__label {
-      background-color: #f12e2e;
+  &_playa {
+    .color-checkbox__label::before {
+      border: 1px solid #d4b382;
+      background-color: #d4b382;
     }
   }
-  &_blue {
-    .color-checkbox__label {
-      background-color: #3966e7;
+  &_tea {
+    .color-checkbox__label::before {
+      border: 1px solid #b89c75;
+      background-color: #b89c75;
     }
   }
-  &_green {
-    .color-checkbox__label {
-      background-color: #57bc06;
+  &_glace {
+    .color-checkbox__label::before {
+      border: 1px solid #7a6232;
+      background-color: #7a6232;
     }
   }
-  &_pink {
-    .color-checkbox__label {
-      background-color: #f9a6cd;
+  &_cappuccio {
+    .color-checkbox__label::before {
+      border: 1px solid #4d2f24;
+      background-color: #4d2f24;
     }
   }
-  &_purple {
-    .color-checkbox__label {
-      background-color: #bc58f0;
+  &_cappuccino {
+    .color-checkbox__label::before {
+      border: 1px solid #bc8064;
+      background-color: #bc8064;
     }
   }
-  &_azure {
-    .color-checkbox__label {
-      background-color: #9cdffe;
+  &_antracite {
+    .color-checkbox__label::before {
+      border: 1px solid #433f3e;
+      background-color: #433f3e;
     }
   }
-  &_orange {
-    .color-checkbox__label {
-      background-color: #ffa60c;
+  &_cognac {
+    .color-checkbox__label::before {
+      border: 1px solid #ab7f50;
+      background-color: #ab7f50;
+    }
+  }
+  &_platino {
+    .color-checkbox__label::before {
+      border: 1px solid #04160c;
+      background-color: #04160c;
+    }
+  }
+  &_avorio {
+    .color-checkbox__label::before {
+      border: 1px solid #d4d2cc;
+      background-color: #d4d2cc;
+    }
+  }
+  &_beige {
+    .color-checkbox__label::before {
+      border: 1px solid #ceb87f;
+      background-color: #ceb87f;
+    }
+  }
+  &_grigiofumo {
+    .color-checkbox__label::before {
+      border: 1px solid #767180;
+      background-color: #767180;
+    }
+  }
+  &_grigiografite {
+    .color-checkbox__label::before {
+      border: 1px solid #605d60;
+      background-color: #605d60;
+    }
+  }
+  &_marrone {
+    .color-checkbox__label::before {
+      border: 1px solid #5f342b;
+      background-color: #5f342b;
+    }
+  }
+  &_piombo {
+    .color-checkbox__label::before {
+      border: 1px solid #231a1d;
+      background-color: #231a1d;
+    }
+  }
+  &_caramello {
+    .color-checkbox__label::before {
+      border: 1px solid #bc8d79;
+      background-color: #bc8d79;
+    }
+    &_fumo {
+      .color-checkbox__label::before {
+        border: 1px solid #44312a;
+        background-color: #44312a;
+      }
+    }
+    &_natural {
+      .color-checkbox__label::before {
+        border: 1px solid #976d5d;
+        background-color: #976d5d;
+      }
+    }
+    &_moro {
+      .color-checkbox__label::before {
+        border: 1px solid #1f1412;
+        background-color: #1f1412;
+      }
+    }
+    &_daino {
+      .color-checkbox__label::before {
+        border: 1px solid #a87c73;
+        background-color: #a87c73;
+      }
+    }
+    &_lola {
+      .color-checkbox__label::before {
+        border: 1px solid #6a4741;
+        background-color: #6a4741;
+      }
+    }
+    &_bronz {
+      .color-checkbox__label::before {
+        border: 1px solid #8a6b3e;
+        background-color: #8a6b3e;
+      }
+    }
+    &_grafit {
+      .color-checkbox__label::before {
+        border: 1px solid #31353e;
+        background-color: #31353e;
+      }
+    }
+    &_marino {
+      .color-checkbox__label::before {
+        border: 1px solid #222356;
+        background-color: #222356;
+      }
+    }
+    &_marsala {
+      .color-checkbox__label::before {
+        border: 1px solid #762e3f;
+        background-color: #762e3f;
+      }
+    }
+    &_chocolate {
+      .color-checkbox__label::before {
+        border: 1px solid #3e2c1f;
+        background-color: #3e2c1f;
+      }
+    }
+    &_grigionero {
+      .color-checkbox__label::before {
+        border: 1px solid #28303b;
+        background-color: #28303b;
+      }
+    }
+    &_grey {
+      .color-checkbox__label::before {
+        border: 1px solid #48484a;
+        background-color: #48484a;
+      }
+    }
+    &_panna {
+      .color-checkbox__label::before {
+        border: 1px solid #e4e2c4;
+        background-color: #e4e2c4;
+      }
+    }
+    &_grigio {
+      .color-checkbox__label::before {
+        border: 1px solid #999999;
+        background-color: #999999;
+      }
+    }
+    &_mocca {
+      .color-checkbox__label::before {
+        border: 1px solid #543224;
+        background-color: #543224;
+      }
+    }
+    &_shade {
+      .color-checkbox__label::before {
+        border: 1px solid #593129;
+        background-color: #593129;
+      }
+    }
+    &_melanzana {
+      .color-checkbox__label::before {
+        border: 1px solid #400525;
+        background-color: #400525;
+      }
+    }
+    &_navy {
+      .color-checkbox__label::before {
+        border: 1px solid #233145;
+        background-color: #233145;
+      }
+    }
+    &_verde {
+      .color-checkbox__label::before {
+        border: 1px solid #063427;
+        background-color: #063427;
+      }
+    }
+    &_pink {
+      .color-checkbox__label::before {
+        border: 1px solid #df1382;
+        background-color: #df1382;
+      }
+    }
+    &_cherry {
+      .color-checkbox__label::before {
+        border: 1px solid #690424;
+        background-color: #690424;
+      }
+    }
+    &_coral {
+      .color-checkbox__label::before {
+        border: 1px solid #ffb3b3;
+        background-color: #ffb3b3;
+      }
+    }
+    &_violet {
+      .color-checkbox__label::before {
+        border: 1px solid #44002f;
+        background-color: #44002f;
+      }
+    }
+    &_lightpink {
+      .color-checkbox__label::before {
+        border: 1px solid #fddde0;
+        background-color: #fddde0;
+      }
+    }
+    &_lavanda {
+      .color-checkbox__label::before {
+        border: 1px solid #734f95;
+        background-color: #734f95;
+      }
+    }
+    &_denim {
+      .color-checkbox__label::before {
+        border: 1px solid #4c6cb9;
+        background-color: #4c6cb9;
+      }
+    }
+    &_blue {
+      .color-checkbox__label::before {
+        border: 1px solid #00529b;
+        background-color: #00529b;
+      }
+    }
+    &_cacao {
+      .color-checkbox__label::before {
+        border: 1px solid #765b52;
+        background-color: #765b52;
+      }
     }
   }
 }
 
 .color-checkbox__input {
-  display: none;
+  @include visually-hidden;
 }
 
-.color-checkbox__input:checked + .color-checkbox__label {
+.color-checkbox__input:checked + .color-checkbox__label::before {
   box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
   border-color: #7cb5c9;
   transition: box-shadow 0.25s;
 }
 
 .color-checkbox__label {
+  position: relative;
   display: block;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
+  padding-left: 25px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
     border: 1px solid transparent;
+  }
 }
