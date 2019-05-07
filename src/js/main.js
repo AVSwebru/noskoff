@@ -6,4 +6,4 @@ import './counter';
 import './catalog-filter';
 import './menu-adapt';
 import './like';
-// import "./preloader";
+import './preloader';

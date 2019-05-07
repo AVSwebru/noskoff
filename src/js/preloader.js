@@ -1,12 +1,10 @@
 (function() {
   var preloader = document.querySelector('.js-preloader');
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log('content loaded');
-  });
+
   window.addEventListener('load', () => {
     setTimeout(() => {
       preloader.classList.add('slide-out');
-    }, 3000);
+    }, 1500);
 
     preloader.addEventListener('animationend', () => {
       preloader.hidden = true;
