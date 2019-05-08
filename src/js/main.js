@@ -1,5 +1,5 @@
 import './uikit';
-import './animations';
+import './banner';
 import './slider';
 import './filter-list';
 import './counter';

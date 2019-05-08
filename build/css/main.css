@@ -4795,7 +4795,7 @@ button {
 
 .home-about__grid {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: auto 390px;
   grid-column-gap: 80px;
   grid-row-gap: 40px; }
   @media (max-width: 640px) {
@@ -7734,3 +7734,51 @@ a.pagination__next {
     background-image: url("../img/connection.svg"); }
   .features-item_4 {
     background-image: url("../img/quality.svg"); }
+
+.gift-banner {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  box-sizing: border-box;
+  padding: 25px 0 20px;
+  border: 1px solid #b1b1b1;
+  margin: 0 auto; }
+  .gift-banner:hover {
+    text-decoration: none; }
+  .gift-banner::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    right: 10px;
+    bottom: -10px;
+    border: 1px solid #b1b1b1; }
+
+.gift-banner__overtitle {
+  margin-bottom: 10px;
+  color: #505050; }
+
+.gift-banner__middle-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; }
+
+.gift-banner__title {
+  margin: 0 10px;
+  text-align: center;
+  color: #505050;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.gift-banner__price {
+  padding: 5px 10px;
+  background-color: #ededed;
+  color: #505050;
+  font-weight: 500;
+  line-height: 1; }

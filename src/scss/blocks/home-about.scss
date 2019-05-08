@@ -11,7 +11,7 @@
 
 .home-about__grid {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: auto 390px;
   grid-column-gap: 80px;
   grid-row-gap: 40px;
   @media (max-width: $breakpoint-small) {
