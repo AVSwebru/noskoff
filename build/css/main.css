@@ -4806,9 +4806,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (max-width: 640px) {
-    .home-about__banner {
-      display: inline-block; } }
 
 .home-about__banner-1 {
   margin-bottom: 25px; }
@@ -7721,6 +7718,8 @@ a.pagination__next {
             animation: slide-out 0.5s ease-out forwards; }
 
 .features-item {
+  display: flex;
+  align-items: center;
   padding-left: 55px;
   background: no-repeat 0 0 / 40px auto;
   font-size: 14px;
