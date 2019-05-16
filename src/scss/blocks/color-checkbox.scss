@@ -35,7 +35,7 @@
       background-color: #ffffff;
     }
   }
-  &_midnightblue {
+  &_midnight-blue {
     .color-checkbox__label::before {
       border: 1px solid #19196f;
       background-color: #19196f;
@@ -107,13 +107,13 @@
       background-color: #ceb87f;
     }
   }
-  &_grigiofumo {
+  &_grigio-fumo {
     .color-checkbox__label::before {
       border: 1px solid #767180;
       background-color: #767180;
     }
   }
-  &_grigiografite {
+  &_grigio-grafite {
     .color-checkbox__label::before {
       border: 1px solid #605d60;
       background-color: #605d60;
@@ -136,173 +136,173 @@
       border: 1px solid #bc8d79;
       background-color: #bc8d79;
     }
-    &_fumo {
-      .color-checkbox__label::before {
-        border: 1px solid #44312a;
-        background-color: #44312a;
-      }
+  }
+  &_fumo {
+    .color-checkbox__label::before {
+      border: 1px solid #44312a;
+      background-color: #44312a;
     }
-    &_natural {
-      .color-checkbox__label::before {
-        border: 1px solid #976d5d;
-        background-color: #976d5d;
-      }
+  }
+  &_natural {
+    .color-checkbox__label::before {
+      border: 1px solid #976d5d;
+      background-color: #976d5d;
     }
-    &_moro {
-      .color-checkbox__label::before {
-        border: 1px solid #1f1412;
-        background-color: #1f1412;
-      }
+  }
+  &_moro {
+    .color-checkbox__label::before {
+      border: 1px solid #1f1412;
+      background-color: #1f1412;
     }
-    &_daino {
-      .color-checkbox__label::before {
-        border: 1px solid #a87c73;
-        background-color: #a87c73;
-      }
+  }
+  &_daino {
+    .color-checkbox__label::before {
+      border: 1px solid #a87c73;
+      background-color: #a87c73;
     }
-    &_lola {
-      .color-checkbox__label::before {
-        border: 1px solid #6a4741;
-        background-color: #6a4741;
-      }
+  }
+  &_lola {
+    .color-checkbox__label::before {
+      border: 1px solid #6a4741;
+      background-color: #6a4741;
     }
-    &_bronz {
-      .color-checkbox__label::before {
-        border: 1px solid #8a6b3e;
-        background-color: #8a6b3e;
-      }
+  }
+  &_bronz {
+    .color-checkbox__label::before {
+      border: 1px solid #8a6b3e;
+      background-color: #8a6b3e;
     }
-    &_grafit {
-      .color-checkbox__label::before {
-        border: 1px solid #31353e;
-        background-color: #31353e;
-      }
+  }
+  &_grafit {
+    .color-checkbox__label::before {
+      border: 1px solid #31353e;
+      background-color: #31353e;
     }
-    &_marino {
-      .color-checkbox__label::before {
-        border: 1px solid #222356;
-        background-color: #222356;
-      }
+  }
+  &_marino {
+    .color-checkbox__label::before {
+      border: 1px solid #222356;
+      background-color: #222356;
     }
-    &_marsala {
-      .color-checkbox__label::before {
-        border: 1px solid #762e3f;
-        background-color: #762e3f;
-      }
+  }
+  &_marsala {
+    .color-checkbox__label::before {
+      border: 1px solid #762e3f;
+      background-color: #762e3f;
     }
-    &_chocolate {
-      .color-checkbox__label::before {
-        border: 1px solid #3e2c1f;
-        background-color: #3e2c1f;
-      }
+  }
+  &_chocolate {
+    .color-checkbox__label::before {
+      border: 1px solid #3e2c1f;
+      background-color: #3e2c1f;
     }
-    &_grigionero {
-      .color-checkbox__label::before {
-        border: 1px solid #28303b;
-        background-color: #28303b;
-      }
+  }
+  &_grigio-nero {
+    .color-checkbox__label::before {
+      border: 1px solid #28303b;
+      background-color: #28303b;
     }
-    &_grey {
-      .color-checkbox__label::before {
-        border: 1px solid #48484a;
-        background-color: #48484a;
-      }
+  }
+  &_grey {
+    .color-checkbox__label::before {
+      border: 1px solid #48484a;
+      background-color: #48484a;
     }
-    &_panna {
-      .color-checkbox__label::before {
-        border: 1px solid #e4e2c4;
-        background-color: #e4e2c4;
-      }
+  }
+  &_panna {
+    .color-checkbox__label::before {
+      border: 1px solid #e4e2c4;
+      background-color: #e4e2c4;
     }
-    &_grigio {
-      .color-checkbox__label::before {
-        border: 1px solid #999999;
-        background-color: #999999;
-      }
+  }
+  &_grigio {
+    .color-checkbox__label::before {
+      border: 1px solid #999999;
+      background-color: #999999;
     }
-    &_mocca {
-      .color-checkbox__label::before {
-        border: 1px solid #543224;
-        background-color: #543224;
-      }
+  }
+  &_mocca {
+    .color-checkbox__label::before {
+      border: 1px solid #543224;
+      background-color: #543224;
     }
-    &_shade {
-      .color-checkbox__label::before {
-        border: 1px solid #593129;
-        background-color: #593129;
-      }
+  }
+  &_shade {
+    .color-checkbox__label::before {
+      border: 1px solid #593129;
+      background-color: #593129;
     }
-    &_melanzana {
-      .color-checkbox__label::before {
-        border: 1px solid #400525;
-        background-color: #400525;
-      }
+  }
+  &_melanzana {
+    .color-checkbox__label::before {
+      border: 1px solid #400525;
+      background-color: #400525;
     }
-    &_navy {
-      .color-checkbox__label::before {
-        border: 1px solid #233145;
-        background-color: #233145;
-      }
+  }
+  &_navy {
+    .color-checkbox__label::before {
+      border: 1px solid #233145;
+      background-color: #233145;
     }
-    &_verde {
-      .color-checkbox__label::before {
-        border: 1px solid #063427;
-        background-color: #063427;
-      }
+  }
+  &_verde {
+    .color-checkbox__label::before {
+      border: 1px solid #063427;
+      background-color: #063427;
     }
-    &_pink {
-      .color-checkbox__label::before {
-        border: 1px solid #df1382;
-        background-color: #df1382;
-      }
+  }
+  &_pink {
+    .color-checkbox__label::before {
+      border: 1px solid #df1382;
+      background-color: #df1382;
     }
-    &_cherry {
-      .color-checkbox__label::before {
-        border: 1px solid #690424;
-        background-color: #690424;
-      }
+  }
+  &_cherry {
+    .color-checkbox__label::before {
+      border: 1px solid #690424;
+      background-color: #690424;
     }
-    &_coral {
-      .color-checkbox__label::before {
-        border: 1px solid #ffb3b3;
-        background-color: #ffb3b3;
-      }
+  }
+  &_coral {
+    .color-checkbox__label::before {
+      border: 1px solid #ffb3b3;
+      background-color: #ffb3b3;
     }
-    &_violet {
-      .color-checkbox__label::before {
-        border: 1px solid #44002f;
-        background-color: #44002f;
-      }
+  }
+  &_violet {
+    .color-checkbox__label::before {
+      border: 1px solid #44002f;
+      background-color: #44002f;
     }
-    &_lightpink {
-      .color-checkbox__label::before {
-        border: 1px solid #fddde0;
-        background-color: #fddde0;
-      }
+  }
+  &_lightpink {
+    .color-checkbox__label::before {
+      border: 1px solid #fddde0;
+      background-color: #fddde0;
     }
-    &_lavanda {
-      .color-checkbox__label::before {
-        border: 1px solid #734f95;
-        background-color: #734f95;
-      }
+  }
+  &_lavanda {
+    .color-checkbox__label::before {
+      border: 1px solid #734f95;
+      background-color: #734f95;
     }
-    &_denim {
-      .color-checkbox__label::before {
-        border: 1px solid #4c6cb9;
-        background-color: #4c6cb9;
-      }
+  }
+  &_denim {
+    .color-checkbox__label::before {
+      border: 1px solid #4c6cb9;
+      background-color: #4c6cb9;
     }
-    &_blue {
-      .color-checkbox__label::before {
-        border: 1px solid #00529b;
-        background-color: #00529b;
-      }
+  }
+  &_blue {
+    .color-checkbox__label::before {
+      border: 1px solid #00529b;
+      background-color: #00529b;
     }
-    &_cacao {
-      .color-checkbox__label::before {
-        border: 1px solid #765b52;
-        background-color: #765b52;
-      }
+  }
+  &_cacao {
+    .color-checkbox__label::before {
+      border: 1px solid #765b52;
+      background-color: #765b52;
     }
   }
 }
