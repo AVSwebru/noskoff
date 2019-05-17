@@ -1,254 +1,254 @@
-.color-block {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  &_black {
-    border: 1px solid #181818;
-    background-color: #181818;
-  }
-  &_white {
-    border: 1px solid #dddddd;
-    background-color: #fff;
-  }
-  &_cream {
-    border: 1px solid #eadac0;
-    background-color: #eadac0;
-  }
-  &_gray {
-    border: 1px solid #bababa;
-    background-color: #bababa;
-  }
-  &_red {
-    border: 1px solid #f12e2e;
-    background-color: #f12e2e;
-  }
-  &_blue {
-    border: 1px solid #3966e7;
-    background-color: #3966e7;
-  }
-  &_green {
-    border: 1px solid #57bc06;
-    background-color: #57bc06;
-  }
-  &_pink {
-    border: 1px solid #f9a6cd;
-    background-color: #f9a6cd;
-  }
-  &_purple {
-    border: 1px solid#bc58f0;
-    background-color: #bc58f0;
-  }
-  &_azure {
-    border: 1px solid #9cdffe;
-    background-color: #9cdffe;
-  }
-  &_orange {
-    border: 1px solid #ffa60c;
-    background-color: #ffa60c;
-  }
-  &_coffee {
-    border: 1px solid #642c1f;
-    background-color: #642c1f;
-  }
-  &_caffee {
-    border: 1px solid #350e00;
-    background-color: #350e00;
-  }
-  &_lana {
-    border: 1px solid #f4ead4;
-    background-color: #f4ead4;
-  }
-  &_nero {
-    border: 1px solid #000000;
-    background-color: #000000;
-  }
-  &_black {
-    border: 1px solid #000000;
-    background-color: #000000;
-  }
-  &_bianco {
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-  }
-  &_midnightblue {
-    border: 1px solid #19196f;
-    background-color: #19196f;
-  }
-  &_carbone {
-    border: 1px solid #2d3a40;
-    background-color: #2d3a40;
-  }
-  &_playa {
-    border: 1px solid #d4b382;
-    background-color: #d4b382;
-  }
-  &_tea {
-    border: 1px solid #b89c75;
-    background-color: #b89c75;
-  }
-  &_glace {
-    border: 1px solid #7a6232;
-    background-color: #7a6232;
-  }
-  &_cappuccio {
-    border: 1px solid #4d2f24;
-    background-color: #4d2f24;
-  }
-  &_cappuccino {
-    border: 1px solid #bc8064;
-    background-color: #bc8064;
-  }
-  &_antracite {
-    border: 1px solid #433f3e;
-    background-color: #433f3e;
-  }
-  &_cognac {
-    border: 1px solid #ab7f50;
-    background-color: #ab7f50;
-  }
-  &_platino {
-    border: 1px solid #04160c;
-    background-color: #04160c;
-  }
-  &_avorio {
-    border: 1px solid #d4d2cc;
-    background-color: #d4d2cc;
-  }
-  &_beige {
-    border: 1px solid #ceb87f;
-    background-color: #ceb87f;
-  }
-  &_grigiofumo {
-    border: 1px solid #767180;
-    background-color: #767180;
-  }
-  &_grigiografite {
-    border: 1px solid #605d60;
-    background-color: #605d60;
-  }
-  &_marrone {
-    border: 1px solid #5f342b;
-    background-color: #5f342b;
-  }
-  &_piombo {
-    border: 1px solid #231a1d;
-    background-color: #231a1d;
-  }
-  &_caramello {
-    border: 1px solid #bc8d79;
-    background-color: #bc8d79;
-  }
-  &_fumo {
-    border: 1px solid #44312a;
-    background-color: #44312a;
-  }
-  &_natural {
-    border: 1px solid #976d5d;
-    background-color: #976d5d;
-  }
-  &_moro {
-    border: 1px solid #1f1412;
-    background-color: #1f1412;
-  }
-  &_daino {
-    border: 1px solid #a87c73;
-    background-color: #a87c73;
-  }
-  &_lola {
-    border: 1px solid #6a4741;
-    background-color: #6a4741;
-  }
-  &_bronz {
-    border: 1px solid #8a6b3e;
-    background-color: #8a6b3e;
-  }
-  &_grafit {
-    border: 1px solid #31353e;
-    background-color: #31353e;
-  }
-  &_marino {
-    border: 1px solid #222356;
-    background-color: #222356;
-  }
-  &_marsala {
-    border: 1px solid #762e3f;
-    background-color: #762e3f;
-  }
-  &_chocolate {
-    border: 1px solid #3e2c1f;
-    background-color: #3e2c1f;
-  }
-  &_grigionero {
-    border: 1px solid #28303b;
-    background-color: #28303b;
-  }
-  &_grey {
-    border: 1px solid #48484a;
-    background-color: #48484a;
-  }
-  &_panna {
-    border: 1px solid #e4e2c4;
-    background-color: #e4e2c4;
-  }
-  &_grigio {
-    border: 1px solid #999999;
-    background-color: #999999;
-  }
-  &_mocca {
-    border: 1px solid #543224;
-    background-color: #543224;
-  }
-  &_shade {
-    border: 1px solid #593129;
-    background-color: #593129;
-  }
-  &_melanzana {
-    border: 1px solid #400525;
-    background-color: #400525;
-  }
-  &_navy {
-    border: 1px solid #233145;
-    background-color: #233145;
-  }
-  &_verde {
-    border: 1px solid #063427;
-    background-color: #063427;
-  }
-  &_pink {
-    border: 1px solid #df1382;
-    background-color: #df1382;
-  }
-  &_cherry {
-    border: 1px solid #690424;
-    background-color: #690424;
-  }
-  &_coral {
-    border: 1px solid #ffb3b3;
-    background-color: #ffb3b3;
-  }
-  &_violet {
-    border: 1px solid #44002f;
-    background-color: #44002f;
-  }
-  &_lightpink {
-    border: 1px solid #fddde0;
-    background-color: #fddde0;
-  }
-  &_lavanda {
-    border: 1px solid #734f95;
-    background-color: #734f95;
-  }
-  &_denim {
-    border: 1px solid #4c6cb9;
-    background-color: #4c6cb9;
-  }
-  &_blue {
-    border: 1px solid #00529b;
-    background-color: #00529b;
-  }
-  &_cacao {
-    border: 1px solid #765b52;
-    background-color: #765b52;
-  }
-}
+// .color-block {
+//   display: inline-block;
+//   width: 12px;
+//   height: 12px;
+//   border-radius: 50%;
+//   &_black {
+//     border: 1px solid #181818;
+//     background-color: #181818;
+//   }
+//   &_white {
+//     border: 1px solid #dddddd;
+//     background-color: #fff;
+//   }
+//   &_cream {
+//     border: 1px solid #eadac0;
+//     background-color: #eadac0;
+//   }
+//   &_gray {
+//     border: 1px solid #bababa;
+//     background-color: #bababa;
+//   }
+//   &_red {
+//     border: 1px solid #f12e2e;
+//     background-color: #f12e2e;
+//   }
+//   &_blue {
+//     border: 1px solid #3966e7;
+//     background-color: #3966e7;
+//   }
+//   &_green {
+//     border: 1px solid #57bc06;
+//     background-color: #57bc06;
+//   }
+//   &_pink {
+//     border: 1px solid #f9a6cd;
+//     background-color: #f9a6cd;
+//   }
+//   &_purple {
+//     border: 1px solid#bc58f0;
+//     background-color: #bc58f0;
+//   }
+//   &_azure {
+//     border: 1px solid #9cdffe;
+//     background-color: #9cdffe;
+//   }
+//   &_orange {
+//     border: 1px solid #ffa60c;
+//     background-color: #ffa60c;
+//   }
+//   &_coffee {
+//     border: 1px solid #642c1f;
+//     background-color: #642c1f;
+//   }
+//   &_caffee {
+//     border: 1px solid #350e00;
+//     background-color: #350e00;
+//   }
+//   &_lana {
+//     border: 1px solid #f4ead4;
+//     background-color: #f4ead4;
+//   }
+//   &_nero {
+//     border: 1px solid #000000;
+//     background-color: #000000;
+//   }
+//   &_black {
+//     border: 1px solid #000000;
+//     background-color: #000000;
+//   }
+//   &_bianco {
+//     border: 1px solid #ffffff;
+//     background-color: #ffffff;
+//   }
+//   &_midnightblue {
+//     border: 1px solid #19196f;
+//     background-color: #19196f;
+//   }
+//   &_carbone {
+//     border: 1px solid #2d3a40;
+//     background-color: #2d3a40;
+//   }
+//   &_playa {
+//     border: 1px solid #d4b382;
+//     background-color: #d4b382;
+//   }
+//   &_tea {
+//     border: 1px solid #b89c75;
+//     background-color: #b89c75;
+//   }
+//   &_glace {
+//     border: 1px solid #7a6232;
+//     background-color: #7a6232;
+//   }
+//   &_cappuccio {
+//     border: 1px solid #4d2f24;
+//     background-color: #4d2f24;
+//   }
+//   &_cappuccino {
+//     border: 1px solid #bc8064;
+//     background-color: #bc8064;
+//   }
+//   &_antracite {
+//     border: 1px solid #433f3e;
+//     background-color: #433f3e;
+//   }
+//   &_cognac {
+//     border: 1px solid #ab7f50;
+//     background-color: #ab7f50;
+//   }
+//   &_platino {
+//     border: 1px solid #04160c;
+//     background-color: #04160c;
+//   }
+//   &_avorio {
+//     border: 1px solid #d4d2cc;
+//     background-color: #d4d2cc;
+//   }
+//   &_beige {
+//     border: 1px solid #ceb87f;
+//     background-color: #ceb87f;
+//   }
+//   &_grigiofumo {
+//     border: 1px solid #767180;
+//     background-color: #767180;
+//   }
+//   &_grigiografite {
+//     border: 1px solid #605d60;
+//     background-color: #605d60;
+//   }
+//   &_marrone {
+//     border: 1px solid #5f342b;
+//     background-color: #5f342b;
+//   }
+//   &_piombo {
+//     border: 1px solid #231a1d;
+//     background-color: #231a1d;
+//   }
+//   &_caramello {
+//     border: 1px solid #bc8d79;
+//     background-color: #bc8d79;
+//   }
+//   &_fumo {
+//     border: 1px solid #44312a;
+//     background-color: #44312a;
+//   }
+//   &_natural {
+//     border: 1px solid #976d5d;
+//     background-color: #976d5d;
+//   }
+//   &_moro {
+//     border: 1px solid #1f1412;
+//     background-color: #1f1412;
+//   }
+//   &_daino {
+//     border: 1px solid #a87c73;
+//     background-color: #a87c73;
+//   }
+//   &_lola {
+//     border: 1px solid #6a4741;
+//     background-color: #6a4741;
+//   }
+//   &_bronz {
+//     border: 1px solid #8a6b3e;
+//     background-color: #8a6b3e;
+//   }
+//   &_grafit {
+//     border: 1px solid #31353e;
+//     background-color: #31353e;
+//   }
+//   &_marino {
+//     border: 1px solid #222356;
+//     background-color: #222356;
+//   }
+//   &_marsala {
+//     border: 1px solid #762e3f;
+//     background-color: #762e3f;
+//   }
+//   &_chocolate {
+//     border: 1px solid #3e2c1f;
+//     background-color: #3e2c1f;
+//   }
+//   &_grigionero {
+//     border: 1px solid #28303b;
+//     background-color: #28303b;
+//   }
+//   &_grey {
+//     border: 1px solid #48484a;
+//     background-color: #48484a;
+//   }
+//   &_panna {
+//     border: 1px solid #e4e2c4;
+//     background-color: #e4e2c4;
+//   }
+//   &_grigio {
+//     border: 1px solid #999999;
+//     background-color: #999999;
+//   }
+//   &_mocca {
+//     border: 1px solid #543224;
+//     background-color: #543224;
+//   }
+//   &_shade {
+//     border: 1px solid #593129;
+//     background-color: #593129;
+//   }
+//   &_melanzana {
+//     border: 1px solid #400525;
+//     background-color: #400525;
+//   }
+//   &_navy {
+//     border: 1px solid #233145;
+//     background-color: #233145;
+//   }
+//   &_verde {
+//     border: 1px solid #063427;
+//     background-color: #063427;
+//   }
+//   &_pink {
+//     border: 1px solid #df1382;
+//     background-color: #df1382;
+//   }
+//   &_cherry {
+//     border: 1px solid #690424;
+//     background-color: #690424;
+//   }
+//   &_coral {
+//     border: 1px solid #ffb3b3;
+//     background-color: #ffb3b3;
+//   }
+//   &_violet {
+//     border: 1px solid #44002f;
+//     background-color: #44002f;
+//   }
+//   &_lightpink {
+//     border: 1px solid #fddde0;
+//     background-color: #fddde0;
+//   }
+//   &_lavanda {
+//     border: 1px solid #734f95;
+//     background-color: #734f95;
+//   }
+//   &_denim {
+//     border: 1px solid #4c6cb9;
+//     background-color: #4c6cb9;
+//   }
+//   &_blue {
+//     border: 1px solid #00529b;
+//     background-color: #00529b;
+//   }
+//   &_cacao {
+//     border: 1px solid #765b52;
+//     background-color: #765b52;
+//   }
+// }
