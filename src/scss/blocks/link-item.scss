@@ -1,4 +1,4 @@
-.banner-item {
+.link-item {
   display: block;
   height: 100%;
   &::before {
@@ -9,7 +9,7 @@
     bottom: 11px;
     left: 11px;
     z-index: 1;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
   }
   &::after {
     content: '';
@@ -23,11 +23,11 @@
     transition: border-color 0.25s;
   }
   &:hover {
-    .banner-item__img {
-      transform: scale(1) translate(-50%,-50%);
+    .link-item__img {
+      transform: scale(1) translate(-50%, -50%);
       transition: transform 1s ease-out;
     }
-    .banner-item__title {
+    .link-item__title {
       color: #3f8ba4;
     }
     &::after {
@@ -36,7 +36,7 @@
     }
   }
   &_sale {
-    .banner-item__title {
+    .link-item__title {
       &::before {
         content: '%';
         position: absolute;
@@ -67,12 +67,12 @@
   }
 }
 
-.banner-item__img {
-  transform: scale(1.1) translate(-50%,-50%);
+.link-item__img {
+  transform: scale(1.1) translate(-50%, -50%);
   transition: transform 1s ease-out;
 }
 
-.banner-item__title {
+.link-item__title {
   position: absolute;
   bottom: 12px;
   left: 50%;
