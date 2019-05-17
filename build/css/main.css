@@ -5360,14 +5360,14 @@ button {
   margin-bottom: 15px; }
 
 .best-offers {
-  padding: 80px 0 100px;
+  padding: 80px 0 50px;
   background: #fff url("../img/lace-gray.png") 0 0 repeat-x; }
   @media (max-width: 960px) {
     .best-offers {
-      padding: 60px 0 67px; } }
+      padding: 60px 0 25px; } }
   @media (max-width: 640px) {
     .best-offers {
-      padding: 30px 0 35px; } }
+      padding: 30px 0 15px; } }
 
 .best-offers__tab {
   margin-bottom: 40px; }
@@ -5409,13 +5409,13 @@ button {
       justify-content: center; } }
 
 .home-banners {
-  padding: 75px 0 60px; }
+  padding: 35px 0 60px; }
   @media (max-width: 960px) {
     .home-banners {
-      padding: 60px 0; } }
+      padding: 30px 0; } }
   @media (max-width: 640px) {
     .home-banners {
-      padding: 20px 0 70px; } }
+      padding: 10px 0 70px; } }
 
 .home-banners__grid {
   display: grid;

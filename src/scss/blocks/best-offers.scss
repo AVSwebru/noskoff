@@ -1,11 +1,11 @@
 .best-offers {
-  padding: 80px 0 100px;
+  padding: 80px 0 50px;
   background: #fff url('../img/lace-gray.png') 0 0 repeat-x;
   @media (max-width: $breakpoint-medium) {
-    padding: 60px 0 67px;
+    padding: 60px 0 25px;
   }
   @media (max-width: $breakpoint-small) {
-    padding: 30px 0 35px;
+    padding: 30px 0 15px;
   }
 }
 

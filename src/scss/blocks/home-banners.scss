@@ -1,10 +1,10 @@
 .home-banners {
-  padding: 75px 0 60px;
+  padding: 35px 0 60px;
   @media (max-width: $breakpoint-medium) {
-    padding: 60px 0;
+    padding: 30px 0;
   }
   @media (max-width: $breakpoint-small) {
-    padding: 20px 0 70px;
+    padding: 10px 0 70px;
   }
 }
 
