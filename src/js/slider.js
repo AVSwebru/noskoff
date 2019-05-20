@@ -1,22 +1,24 @@
 import noUiSlider from 'noUiSlider';
 
-(function () {
+(function() {
   var slider = document.getElementById('slider');
   var priceMin = document.querySelector('.js-catalog-filter-min');
   var priceMax = document.querySelector('.js-catalog-filter-max');
 
   if (document.querySelector('#slider')) {
-
     noUiSlider.create(slider, {
-      start: [0, 9000],
+      start: [
+        Math.round(priceMin.value) || 0,
+        Math.round(priceMax.value) || 3000,
+      ],
       connect: true,
       range: {
-        'min': 0,
-        'max': 9000
-      }
+        min: 0,
+        max: 3000,
+      },
     });
 
-    slider.noUiSlider.on('update', function (values, handle) {
+    slider.noUiSlider.on('update', function(values, handle) {
       var value = values[handle];
 
       if (handle) {
@@ -26,14 +28,12 @@ import noUiSlider from 'noUiSlider';
       }
     });
 
-    priceMin.addEventListener('change', function () {
+    priceMin.addEventListener('change', function() {
       slider.noUiSlider.set([this.value, null]);
     });
 
-    priceMax.addEventListener('change', function () {
+    priceMax.addEventListener('change', function() {
       slider.noUiSlider.set([null, this.value]);
     });
-
   }
-  
 })();
