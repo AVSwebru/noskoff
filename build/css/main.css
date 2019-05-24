@@ -7182,6 +7182,177 @@ a.pagination__next {
   .cart-item__remove-btn {
     align-self: flex-end; } }
 
+.color-block {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500; }
+  .color-block::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; }
+  .color-block_coffee::before {
+    border: 1px solid #642c1f;
+    background-color: #642c1f; }
+  .color-block_caffee::before {
+    border: 1px solid #350e00;
+    background-color: #350e00; }
+  .color-block_lana::before {
+    border: 1px solid #f4ead4;
+    background-color: #f4ead4; }
+  .color-block_nero::before {
+    border: 1px solid #000000;
+    background-color: #000000; }
+  .color-block_black::before {
+    border: 1px solid #000000;
+    background-color: #000000; }
+  .color-block_bianco::before {
+    border: 1px solid #ffffff;
+    background-color: #ffffff; }
+  .color-block_midnight-blue::before {
+    border: 1px solid #19196f;
+    background-color: #19196f; }
+  .color-block_carbone::before {
+    border: 1px solid #2d3a40;
+    background-color: #2d3a40; }
+  .color-block_playa::before {
+    border: 1px solid #d4b382;
+    background-color: #d4b382; }
+  .color-block_tea::before {
+    border: 1px solid #b89c75;
+    background-color: #b89c75; }
+  .color-block_glace::before {
+    border: 1px solid #7a6232;
+    background-color: #7a6232; }
+  .color-block_cappuccio::before {
+    border: 1px solid #4d2f24;
+    background-color: #4d2f24; }
+  .color-block_cappuccino::before {
+    border: 1px solid #bc8064;
+    background-color: #bc8064; }
+  .color-block_antracite::before {
+    border: 1px solid #433f3e;
+    background-color: #433f3e; }
+  .color-block_cognac::before {
+    border: 1px solid #ab7f50;
+    background-color: #ab7f50; }
+  .color-block_platino::before {
+    border: 1px solid #04160c;
+    background-color: #04160c; }
+  .color-block_avorio::before {
+    border: 1px solid #d4d2cc;
+    background-color: #d4d2cc; }
+  .color-block_beige::before {
+    border: 1px solid #ceb87f;
+    background-color: #ceb87f; }
+  .color-block_grigio-fumo::before {
+    border: 1px solid #767180;
+    background-color: #767180; }
+  .color-block_grigio-grafite::before {
+    border: 1px solid #605d60;
+    background-color: #605d60; }
+  .color-block_marrone::before {
+    border: 1px solid #5f342b;
+    background-color: #5f342b; }
+  .color-block_piombo::before {
+    border: 1px solid #231a1d;
+    background-color: #231a1d; }
+  .color-block_caramello::before {
+    border: 1px solid #bc8d79;
+    background-color: #bc8d79; }
+  .color-block_fumo::before {
+    border: 1px solid #44312a;
+    background-color: #44312a; }
+  .color-block_natural::before {
+    border: 1px solid #976d5d;
+    background-color: #976d5d; }
+  .color-block_moro::before {
+    border: 1px solid #1f1412;
+    background-color: #1f1412; }
+  .color-block_daino::before {
+    border: 1px solid #a87c73;
+    background-color: #a87c73; }
+  .color-block_lola::before {
+    border: 1px solid #6a4741;
+    background-color: #6a4741; }
+  .color-block_bronz::before {
+    border: 1px solid #8a6b3e;
+    background-color: #8a6b3e; }
+  .color-block_grafit::before {
+    border: 1px solid #31353e;
+    background-color: #31353e; }
+  .color-block_marino::before {
+    border: 1px solid #222356;
+    background-color: #222356; }
+  .color-block_marsala::before {
+    border: 1px solid #762e3f;
+    background-color: #762e3f; }
+  .color-block_chocolate::before {
+    border: 1px solid #3e2c1f;
+    background-color: #3e2c1f; }
+  .color-block_grigio-nero::before {
+    border: 1px solid #28303b;
+    background-color: #28303b; }
+  .color-block_grey::before {
+    border: 1px solid #48484a;
+    background-color: #48484a; }
+  .color-block_panna::before {
+    border: 1px solid #e4e2c4;
+    background-color: #e4e2c4; }
+  .color-block_grigio::before {
+    border: 1px solid #999999;
+    background-color: #999999; }
+  .color-block_mocca::before {
+    border: 1px solid #543224;
+    background-color: #543224; }
+  .color-block_shade::before {
+    border: 1px solid #593129;
+    background-color: #593129; }
+  .color-block_melanzana::before {
+    border: 1px solid #400525;
+    background-color: #400525; }
+  .color-block_navy::before {
+    border: 1px solid #233145;
+    background-color: #233145; }
+  .color-block_verde::before {
+    border: 1px solid #063427;
+    background-color: #063427; }
+  .color-block_pink::before {
+    border: 1px solid #df1382;
+    background-color: #df1382; }
+  .color-block_cherry::before {
+    border: 1px solid #690424;
+    background-color: #690424; }
+  .color-block_coral::before {
+    border: 1px solid #ffb3b3;
+    background-color: #ffb3b3; }
+  .color-block_violet::before {
+    border: 1px solid #44002f;
+    background-color: #44002f; }
+  .color-block_light-pink::before {
+    border: 1px solid #fddde0;
+    background-color: #fddde0; }
+  .color-block_lavanda::before {
+    border: 1px solid #734f95;
+    background-color: #734f95; }
+  .color-block_denim::before {
+    border: 1px solid #4c6cb9;
+    background-color: #4c6cb9; }
+  .color-block_blue::before {
+    border: 1px solid #00529b;
+    background-color: #00529b; }
+  .color-block_cacao::before {
+    border: 1px solid #765b52;
+    background-color: #765b52; }
+
 .remove-btn {
   padding: 0;
   border: none;
