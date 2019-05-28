@@ -311,10 +311,13 @@
   @include visually-hidden;
 }
 
-.color-checkbox__input:checked + .color-checkbox__label::before {
-  box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
-  border-color: #7cb5c9;
-  transition: box-shadow 0.25s;
+.color-checkbox__input:checked + .color-checkbox__label {
+  font-weight: 500;
+  &::before {
+    box-shadow: 0 0 0 2px rgba(124, 181, 201, 1);
+    border-color: #7cb5c9;
+    transition: box-shadow 0.25s;
+  }
 }
 
 .color-checkbox__label {

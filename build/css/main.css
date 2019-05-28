@@ -7199,6 +7199,12 @@ a.pagination__next {
     width: 12px;
     height: 12px;
     border-radius: 50%; }
+  .color-block[checked] {
+    font-weight: 500; }
+    .color-block[checked]::before {
+      box-shadow: 0 0 0 2px #7cb5c9;
+      border-color: #7cb5c9;
+      transition: box-shadow 0.25s; }
   .color-block_coffee::before {
     border: 1px solid #642c1f;
     background-color: #642c1f; }
@@ -8477,10 +8483,12 @@ a.pagination__next {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.color-checkbox__input:checked + .color-checkbox__label::before {
-  box-shadow: 0 0 7px rgba(124, 181, 201, 0.35);
-  border-color: #7cb5c9;
-  transition: box-shadow 0.25s; }
+.color-checkbox__input:checked + .color-checkbox__label {
+  font-weight: 500; }
+  .color-checkbox__input:checked + .color-checkbox__label::before {
+    box-shadow: 0 0 0 2px #7cb5c9;
+    border-color: #7cb5c9;
+    transition: box-shadow 0.25s; }
 
 .color-checkbox__label {
   position: relative;

@@ -15,6 +15,14 @@
     height: 12px;
     border-radius: 50%;
   }
+  &[checked] {
+    font-weight: 500;
+    &::before {
+      box-shadow: 0 0 0 2px rgba(124, 181, 201, 1);
+      border-color: #7cb5c9;
+      transition: box-shadow 0.25s;
+    }
+  }
   &_coffee {
     &::before {
       border: 1px solid #642c1f;
